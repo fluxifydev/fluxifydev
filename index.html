@@ -1,0 +1,3210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="google-site-verification"
+      content="jZaeIXIX7d5NpXB6ICkj6kQpurNQYJNNaJ5YV21uA5k"
+    />
+    <meta name="theme-color" content="#0a0a0f" />
+    <meta
+      name="description"
+      content="Fluxify is a premium web design agency in Kerala, India. We build high-converting, responsive websites for local businesses with fast turnaround."
+    />
+    <title>Fluxify — Premium Web Design Agency in Kerala</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    />
+
+    <style>
+      :root {
+        --bg: #0a0a0f;
+        --bg-2: #0f0f1a;
+        --surface: #13131f;
+        --surface-2: #1c1c32;
+        --border: rgba(255, 255, 255, 0.07);
+        --accent: #5b6ef5;
+        --accent-2: #7c3aed;
+        --teal: #14b8a6;
+        --text: #f0f0f8;
+        --muted: #8888aa;
+
+        --container: 1180px;
+        --nav-h: 76px;
+        --radius: 18px;
+        --shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: calc(var(--nav-h) + 12px);
+      }
+
+      body {
+        margin: 0;
+        font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+          sans-serif;
+        background: radial-gradient(
+            1200px 700px at 10% -10%,
+            rgba(91, 110, 245, 0.12),
+            transparent 60%
+          ),
+          radial-gradient(
+            900px 600px at 90% 0%,
+            rgba(124, 58, 237, 0.11),
+            transparent 55%
+          ),
+          radial-gradient(
+            900px 680px at 80% 110%,
+            rgba(20, 184, 166, 0.1),
+            transparent 55%
+          ),
+          var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      img,
+      svg {
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button {
+        font: inherit;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+
+      .skip-link:focus {
+        left: 16px;
+        top: 14px;
+        width: auto;
+        height: auto;
+        padding: 10px 12px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid var(--border);
+        z-index: 9999;
+      }
+
+      .container {
+        width: min(var(--container), calc(100% - 48px));
+        margin-inline: auto;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        background: linear-gradient(var(--surface), var(--surface)) padding-box,
+          linear-gradient(135deg, var(--accent), var(--accent-2), var(--teal))
+            border-box;
+        color: var(--text);
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      .section {
+        padding: 92px 0;
+      }
+
+      .section.alt {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.01),
+          rgba(255, 255, 255, 0)
+        );
+        background-color: var(--bg-2);
+      }
+
+      .section-head {
+        display: grid;
+        gap: 12px;
+        margin-bottom: 34px;
+      }
+
+      .kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--teal);
+      }
+
+      .kicker::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 3px;
+        background: linear-gradient(135deg, var(--teal), rgba(20, 184, 166, 0.25));
+        box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.09);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Syne", system-ui, sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.08;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: clamp(28px, 3.2vw, 44px);
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 16px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.02);
+        color: var(--text);
+        cursor: pointer;
+        transition: transform 180ms ease, box-shadow 180ms ease,
+          border-color 180ms ease, background 180ms ease, color 180ms ease;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px) scale(1.03);
+        border-color: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 16px 45px rgba(0, 0, 0, 0.35);
+      }
+
+      .btn.primary {
+        border: 1px solid transparent;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: 0 18px 50px rgba(91, 110, 245, 0.18);
+      }
+
+      .btn.primary:hover {
+        box-shadow: 0 22px 70px rgba(124, 58, 237, 0.22);
+      }
+
+      .btn.ghost {
+        background: rgba(255, 255, 255, 0.02);
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .btn.white {
+        background: #ffffff;
+        color: #0a0a0f;
+        border-color: transparent;
+      }
+
+      .btn.white:hover {
+        box-shadow: 0 22px 70px rgba(0, 0, 0, 0.3);
+      }
+
+      .btn.outline-white {
+        background: transparent;
+        color: #ffffff;
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+
+      .btn.outline-white:hover {
+        border-color: rgba(255, 255, 255, 0.7);
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .card {
+        position: relative;
+        border-radius: var(--radius);
+        border: 1px solid transparent;
+        background: linear-gradient(var(--surface), var(--surface)) padding-box,
+          linear-gradient(
+              135deg,
+              rgba(91, 110, 245, 0.65),
+              rgba(124, 58, 237, 0.5),
+              rgba(20, 184, 166, 0.55)
+            )
+            border-box;
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        transition: transform 200ms ease, box-shadow 200ms ease,
+          background-color 200ms ease;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 26px 90px rgba(0, 0, 0, 0.35);
+        background: linear-gradient(var(--surface-2), var(--surface-2)) padding-box,
+          linear-gradient(
+              135deg,
+              rgba(91, 110, 245, 0.8),
+              rgba(124, 58, 237, 0.65),
+              rgba(20, 184, 166, 0.65)
+            )
+            border-box;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 600ms ease, transform 600ms ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Navbar */
+      .nav-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: var(--nav-h);
+        z-index: 2000;
+        display: flex;
+        align-items: center;
+        background: rgba(10, 10, 15, 0.6);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        transition: background 200ms ease, border-color 200ms ease;
+      }
+
+      .nav-wrap.scrolled {
+        background: rgba(10, 10, 15, 0.95);
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .nav {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 190px;
+      }
+
+      .brand .logo {
+        width: 38px;
+        height: 38px;
+        filter: drop-shadow(0 10px 20px rgba(124, 58, 237, 0.22));
+      }
+
+      .wordmark {
+        font-family: "Syne", system-ui, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        font-size: 18px;
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0;
+      }
+
+      .wordmark .dark {
+        color: rgba(240, 240, 248, 0.92);
+      }
+
+      .wordmark .fy {
+        color: var(--teal);
+      }
+
+      .nav-links {
+        display: inline-flex;
+        gap: 18px;
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .nav-links a {
+        font-size: 13px;
+        color: rgba(240, 240, 248, 0.76);
+        padding: 8px 10px;
+        border-radius: 999px;
+        transition: background 180ms ease, color 180ms ease;
+        white-space: nowrap;
+      }
+
+      .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.05);
+        color: rgba(240, 240, 248, 0.92);
+      }
+
+      .nav-links a.active {
+        background: linear-gradient(
+          135deg,
+          rgba(91, 110, 245, 0.25),
+          rgba(124, 58, 237, 0.15),
+          rgba(20, 184, 166, 0.15)
+        );
+        color: rgba(240, 240, 248, 0.98);
+      }
+
+      .nav-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .nav-toggle {
+        width: 44px;
+        height: 44px;
+        display: none;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text);
+        cursor: pointer;
+      }
+
+      /* Mobile overlay */
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(10, 10, 15, 0.92);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        z-index: 3000;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        padding: 18px;
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 200ms ease, transform 200ms ease;
+      }
+
+      .overlay.open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .overlay-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 10px 6px;
+      }
+
+      .overlay-close {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text);
+        cursor: pointer;
+      }
+
+      .overlay-links {
+        display: grid;
+        gap: 10px;
+        align-content: start;
+        padding: 8px 6px;
+      }
+
+      .overlay-links a {
+        padding: 14px 14px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+        color: rgba(240, 240, 248, 0.92);
+      }
+
+      .overlay-links a:active {
+        transform: scale(0.99);
+      }
+
+      .overlay-bottom {
+        display: grid;
+        gap: 10px;
+        padding: 8px 6px;
+      }
+
+      /* Hero */
+      .hero {
+        min-height: 100vh;
+        padding-top: calc(var(--nav-h) + 40px);
+        padding-bottom: 64px;
+        display: grid;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .orbs {
+        position: absolute;
+        inset: -40px;
+        pointer-events: none;
+        overflow: hidden;
+      }
+
+      .orb {
+        position: absolute;
+        width: 540px;
+        height: 540px;
+        border-radius: 50%;
+        filter: blur(90px);
+        opacity: 0.15;
+        animation: float 12s ease-in-out infinite;
+      }
+
+      .orb.one {
+        background: radial-gradient(circle at 30% 30%, var(--accent), transparent 60%);
+        top: -160px;
+        left: -180px;
+        animation-duration: 14s;
+      }
+
+      .orb.two {
+        background: radial-gradient(circle at 30% 30%, var(--accent-2), transparent 60%);
+        top: -140px;
+        right: -200px;
+        animation-duration: 18s;
+      }
+
+      .orb.three {
+        background: radial-gradient(circle at 30% 30%, var(--teal), transparent 60%);
+        bottom: -220px;
+        left: 20%;
+        animation-duration: 20s;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+          transform: translate3d(0, 28px, 0) scale(1.03);
+        }
+        100% {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+      }
+
+      .hero-grid {
+        display: grid;
+        gap: 26px;
+        justify-items: start;
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h1 {
+        font-weight: 800;
+        font-size: clamp(40px, 6vw, 74px);
+        line-height: 0.95;
+      }
+
+      .hero h1 .line {
+        display: block;
+      }
+
+      .hero p {
+        max-width: 66ch;
+        font-size: 17px;
+        color: rgba(240, 240, 248, 0.72);
+      }
+
+      .hero-ctas {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .hero-stats {
+        margin-top: 18px;
+        width: 100%;
+        padding: 16px 16px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        background: rgba(255, 255, 255, 0.03);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        position: relative;
+        overflow: hidden;
+        animation: fadeUp 700ms ease both;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hero-stats .stat {
+        padding: 12px 14px;
+        text-align: center;
+      }
+
+      .hero-stats .stat + .stat {
+        border-left: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .hero-stats .num {
+        font-family: "Syne", system-ui, sans-serif;
+        font-weight: 800;
+        font-size: 22px;
+        color: rgba(240, 240, 248, 0.95);
+      }
+
+      .hero-stats .label {
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(240, 240, 248, 0.55);
+      }
+
+      .scroll-indicator {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 18px;
+        width: 34px;
+        height: 52px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        display: grid;
+        place-items: center;
+        background: rgba(255, 255, 255, 0.02);
+        z-index: 1;
+      }
+
+      .scroll-indicator i {
+        font-size: 18px;
+        animation: bob 1.4s ease-in-out infinite;
+        color: rgba(240, 240, 248, 0.8);
+      }
+
+      @keyframes bob {
+        0%,
+        100% {
+          transform: translateY(-2px);
+        }
+        50% {
+          transform: translateY(6px);
+        }
+      }
+
+      /* Services */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+      }
+
+      .service-card {
+        padding: 22px;
+        display: grid;
+        gap: 14px;
+        min-height: 220px;
+      }
+
+      .service-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(
+          circle at 30% 30%,
+          rgba(91, 110, 245, 0.35),
+          rgba(124, 58, 237, 0.12),
+          rgba(255, 255, 255, 0.02) 70%
+        );
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 14px 45px rgba(91, 110, 245, 0.12);
+      }
+
+      .service-icon i {
+        font-size: 22px;
+        color: rgba(240, 240, 248, 0.92);
+      }
+
+      .service-card h3 {
+        font-size: 22px;
+        font-weight: 800;
+      }
+
+      .service-card p {
+        color: rgba(240, 240, 248, 0.62);
+      }
+
+      .service-card .learn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(240, 240, 248, 0.82);
+        font-weight: 500;
+        margin-top: 6px;
+      }
+
+      .service-card .learn i {
+        transition: transform 180ms ease;
+      }
+
+      .service-card:hover .learn i {
+        transform: translateX(3px);
+      }
+
+      .service-accent {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--teal));
+        opacity: 0;
+        transition: opacity 200ms ease;
+      }
+
+      .service-card:hover .service-accent {
+        opacity: 1;
+      }
+
+      /* Why */
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .why-card {
+        padding: 22px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .why-card i {
+        font-size: 26px;
+        color: var(--teal);
+      }
+
+      .why-card h3 {
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      /* Tech */
+      .tech-wrap {
+        position: relative;
+      }
+
+      .tech-float {
+        position: absolute;
+        left: 50%;
+        top: -12px;
+        transform: translateX(-50%);
+        width: min(900px, 100%);
+        height: 140px;
+        pointer-events: none;
+      }
+
+      .tech-float .ti {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.03);
+        color: rgba(240, 240, 248, 0.92);
+        font-size: 13px;
+        font-weight: 500;
+        animation: floatIcon 4.8s ease-in-out infinite;
+        filter: drop-shadow(0 16px 35px rgba(0, 0, 0, 0.35));
+      }
+
+      .tech-float .ti span {
+        font-size: 15px;
+      }
+
+      @keyframes floatIcon {
+        0%,
+        100% {
+          transform: translateY(-10px);
+        }
+        50% {
+          transform: translateY(12px);
+        }
+      }
+
+      .ti.python {
+        left: 4%;
+        top: 18%;
+        animation-delay: 0ms;
+        background: linear-gradient(
+            rgba(19, 19, 31, 0.85),
+            rgba(19, 19, 31, 0.85)
+          )
+          padding-box,
+          linear-gradient(135deg, #3776ab, #ffd43b) border-box;
+        border: 1px solid transparent;
+      }
+
+      .ti.html {
+        left: 22%;
+        top: 0%;
+        animation-delay: 250ms;
+        background: linear-gradient(
+            rgba(19, 19, 31, 0.85),
+            rgba(19, 19, 31, 0.85)
+          )
+          padding-box,
+          linear-gradient(135deg, #e34f26, #f97316) border-box;
+        border: 1px solid transparent;
+      }
+
+      .ti.css {
+        left: 42%;
+        top: 18%;
+        animation-delay: 400ms;
+        background: linear-gradient(
+            rgba(19, 19, 31, 0.85),
+            rgba(19, 19, 31, 0.85)
+          )
+          padding-box,
+          linear-gradient(135deg, #2965f1, #60a5fa) border-box;
+        border: 1px solid transparent;
+      }
+
+      .ti.js {
+        left: 58%;
+        top: 0%;
+        animation-delay: 550ms;
+        background: linear-gradient(
+            rgba(19, 19, 31, 0.85),
+            rgba(19, 19, 31, 0.85)
+          )
+          padding-box,
+          linear-gradient(135deg, #f7df1e, #f59e0b) border-box;
+        border: 1px solid transparent;
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      .ti.react {
+        left: 74%;
+        top: 18%;
+        animation-delay: 700ms;
+        background: linear-gradient(
+            rgba(19, 19, 31, 0.85),
+            rgba(19, 19, 31, 0.85)
+          )
+          padding-box,
+          linear-gradient(135deg, #22d3ee, #0ea5e9) border-box;
+        border: 1px solid transparent;
+      }
+
+      .ti.vite {
+        left: 86%;
+        top: 0%;
+        animation-delay: 900ms;
+        background: linear-gradient(
+            rgba(19, 19, 31, 0.85),
+            rgba(19, 19, 31, 0.85)
+          )
+          padding-box,
+          linear-gradient(135deg, #a855f7, #facc15) border-box;
+        border: 1px solid transparent;
+      }
+
+      .ti.node {
+        left: 12%;
+        top: 62%;
+        animation-delay: 1100ms;
+        background: linear-gradient(
+            rgba(19, 19, 31, 0.85),
+            rgba(19, 19, 31, 0.85)
+          )
+          padding-box,
+          linear-gradient(135deg, #22c55e, #16a34a) border-box;
+        border: 1px solid transparent;
+      }
+
+      .ti.cpp {
+        left: 66%;
+        top: 62%;
+        animation-delay: 1300ms;
+        background: linear-gradient(
+            rgba(19, 19, 31, 0.85),
+            rgba(19, 19, 31, 0.85)
+          )
+          padding-box,
+          linear-gradient(135deg, #2563eb, #93c5fd) border-box;
+        border: 1px solid transparent;
+      }
+
+      .tech-desc {
+        max-width: 78ch;
+        margin-top: 8px;
+      }
+
+      .tech-badges {
+        margin-top: 18px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .tech-badge {
+        padding: 12px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        background: rgba(255, 255, 255, 0.03);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .tech-badge strong {
+        color: rgba(240, 240, 248, 0.92);
+        font-weight: 600;
+        font-size: 13px;
+      }
+
+      .tech-badge em {
+        font-style: normal;
+        font-size: 12px;
+        color: rgba(240, 240, 248, 0.62);
+      }
+
+      /* Projects */
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .project-card {
+        display: grid;
+        grid-template-rows: auto 1fr;
+      }
+
+      .project-preview {
+        aspect-ratio: 16 / 9;
+        background: rgba(255, 255, 255, 0.02);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .project-preview iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+        opacity: 0;
+        transition: opacity 220ms ease;
+      }
+
+      .project-card.preview-ready .project-preview iframe {
+        opacity: 1;
+      }
+
+      .project-fallback {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        padding: 14px;
+        background: radial-gradient(
+            circle at 20% 20%,
+            rgba(91, 110, 245, 0.28),
+            transparent 55%
+          ),
+          radial-gradient(
+            circle at 80% 0%,
+            rgba(124, 58, 237, 0.22),
+            transparent 58%
+          ),
+          radial-gradient(
+            circle at 70% 100%,
+            rgba(20, 184, 166, 0.18),
+            transparent 58%
+          ),
+          rgba(255, 255, 255, 0.02);
+        transition: opacity 220ms ease;
+      }
+
+      .project-card.preview-ready .project-fallback {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .fallback-inner {
+        width: 100%;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(10, 10, 15, 0.55);
+        padding: 14px 14px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .fallback-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .fallback-title strong {
+        font-weight: 700;
+        color: rgba(240, 240, 248, 0.92);
+      }
+
+      .fallback-title span {
+        font-size: 12px;
+        color: rgba(240, 240, 248, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .fallback-note {
+        font-size: 13px;
+        color: rgba(240, 240, 248, 0.7);
+      }
+
+      .project-body {
+        padding: 18px 18px 18px 18px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .project-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .project-body h3 {
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .project-body p {
+        color: rgba(240, 240, 248, 0.62);
+        font-size: 14px;
+      }
+
+      .project-actions {
+        margin-top: 8px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .btn.small {
+        padding: 10px 12px;
+        font-size: 13px;
+      }
+
+      /* Process timeline */
+      .timeline {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+        padding-top: 14px;
+      }
+
+      .timeline::after {
+        content: "";
+        position: absolute;
+        left: 14px;
+        right: 14px;
+        top: 30px;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          rgba(91, 110, 245, 0.2),
+          rgba(124, 58, 237, 0.45),
+          rgba(20, 184, 166, 0.35)
+        );
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 900ms ease;
+      }
+
+      .timeline.visible::after {
+        transform: scaleX(1);
+      }
+
+      .step {
+        padding: 20px;
+        min-height: 220px;
+      }
+
+      .step .num {
+        position: absolute;
+        top: 12px;
+        right: 14px;
+        font-family: "Syne", system-ui, sans-serif;
+        font-weight: 800;
+        font-size: 66px;
+        line-height: 1;
+        color: rgba(240, 240, 248, 0.07);
+        pointer-events: none;
+      }
+
+      .step .icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .step .icon i {
+        color: rgba(240, 240, 248, 0.92);
+        font-size: 22px;
+      }
+
+      .step h3 {
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: 12px;
+      }
+
+      .step p {
+        font-size: 14px;
+        color: rgba(240, 240, 248, 0.62);
+      }
+
+      /* Team */
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+
+      .team-card {
+        padding: 20px;
+        display: grid;
+        gap: 12px;
+        min-height: 270px;
+      }
+
+      .avatar {
+        width: 56px;
+        height: 56px;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        font-family: "Syne", system-ui, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: rgba(10, 10, 15, 0.85);
+        background: linear-gradient(135deg, rgba(91, 110, 245, 1), rgba(124, 58, 237, 1), rgba(20, 184, 166, 1));
+        box-shadow: 0 18px 55px rgba(124, 58, 237, 0.18);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .avatar::after {
+        content: "👨‍💻";
+        position: absolute;
+        right: -6px;
+        bottom: -10px;
+        font-size: 24px;
+        opacity: 0.22;
+        transform: rotate(-10deg);
+      }
+
+      .team-card h3 {
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .role {
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(240, 240, 248, 0.62);
+        font-weight: 500;
+      }
+
+      .team-actions {
+        margin-top: auto;
+        display: flex;
+        gap: 10px;
+      }
+
+      .icon-btn {
+        width: 38px;
+        height: 38px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        background: rgba(255, 255, 255, 0.03);
+        color: rgba(240, 240, 248, 0.86);
+        transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+      }
+
+      .icon-btn:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.14);
+      }
+
+      .icon-btn.whatsapp {
+        color: #25d366;
+      }
+
+      /* Testimonials */
+      .t-scroller {
+        overflow: hidden;
+        border-radius: var(--radius);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .t-track {
+        display: flex;
+        gap: 16px;
+        padding: 16px;
+        width: max-content;
+        animation: scrollLeft 26s linear infinite;
+      }
+
+      .t-scroller.paused .t-track {
+        animation-play-state: paused;
+      }
+
+      @keyframes scrollLeft {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      .review {
+        width: 320px;
+        padding: 18px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        background: rgba(19, 19, 31, 0.8);
+        display: grid;
+        gap: 10px;
+      }
+
+      .stars {
+        color: #fbbf24;
+        letter-spacing: 0.08em;
+      }
+
+      .review p {
+        color: rgba(240, 240, 248, 0.72);
+        font-size: 14px;
+      }
+
+      .reviewer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 6px;
+      }
+
+      .mini {
+        width: 34px;
+        height: 34px;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        font-weight: 700;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        color: rgba(240, 240, 248, 0.9);
+      }
+
+      .reviewer strong {
+        font-size: 13px;
+        color: rgba(240, 240, 248, 0.92);
+      }
+
+      .reviewer span {
+        display: block;
+        font-size: 12px;
+        color: rgba(240, 240, 248, 0.62);
+      }
+
+      /* FAQ */
+      .faq {
+        display: grid;
+        gap: 12px;
+      }
+
+      .faq-item {
+        border-radius: var(--radius);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.02);
+        overflow: hidden;
+      }
+
+      .faq-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 16px 16px;
+        background: transparent;
+        border: 0;
+        color: rgba(240, 240, 248, 0.92);
+        cursor: pointer;
+        text-align: left;
+      }
+
+      .faq-btn strong {
+        font-family: "Syne", system-ui, sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+      }
+
+      .faq-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        background: rgba(255, 255, 255, 0.03);
+        transition: transform 200ms ease;
+        flex: 0 0 auto;
+      }
+
+      .faq-icon i {
+        font-size: 18px;
+        color: rgba(240, 240, 248, 0.86);
+      }
+
+      .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 320ms ease;
+      }
+
+      .faq-content .inner {
+        padding: 0 16px 16px 16px;
+        color: rgba(240, 240, 248, 0.68);
+        font-size: 14px;
+      }
+
+      .faq-item.open .faq-content {
+        max-height: 1000px;
+      }
+
+      .faq-item.open .faq-icon {
+        transform: rotate(180deg);
+      }
+
+      /* Contact */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 18px;
+        align-items: start;
+      }
+
+      .form-card {
+        padding: 40px;
+      }
+
+      .form-card h3 {
+        font-size: 22px;
+        font-weight: 800;
+      }
+
+      .fields {
+        margin-top: 18px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .field label {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(240, 240, 248, 0.62);
+        margin-bottom: 6px;
+        font-weight: 500;
+      }
+
+      .field input,
+      .field textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        background: rgba(255, 255, 255, 0.03);
+        color: rgba(240, 240, 248, 0.92);
+        outline: none;
+        transition: border-color 180ms ease, box-shadow 180ms ease,
+          background 180ms ease;
+      }
+
+      .field textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      .field input:focus,
+      .field textarea:focus {
+        border-color: rgba(91, 110, 245, 0.6);
+        box-shadow: 0 0 0 4px rgba(91, 110, 245, 0.14);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .form-status {
+        margin-top: 12px;
+        font-size: 14px;
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: none;
+      }
+
+      .form-status.ok {
+        display: block;
+        border-color: rgba(34, 197, 94, 0.45);
+        background: rgba(34, 197, 94, 0.08);
+        color: rgba(240, 240, 248, 0.92);
+      }
+
+      .form-status.err {
+        display: block;
+        border-color: rgba(239, 68, 68, 0.45);
+        background: rgba(239, 68, 68, 0.08);
+        color: rgba(240, 240, 248, 0.92);
+      }
+
+      .side-stack {
+        display: grid;
+        gap: 18px;
+      }
+
+      .side-card {
+        padding: 22px;
+      }
+
+      .side-card h3 {
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .qc {
+        margin-top: 14px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .qc-row {
+        display: grid;
+        grid-template-columns: 48px 1fr;
+        gap: 12px;
+        align-items: center;
+        padding: 12px 12px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .qc-ico {
+        width: 44px;
+        height: 44px;
+        border-radius: 16px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+      }
+
+      .qc-ico.phone {
+        background: linear-gradient(135deg, #3b82f6, #6366f1);
+      }
+
+      .qc-ico.wa {
+        background: linear-gradient(135deg, #22c55e, #16a34a);
+      }
+
+      .qc-ico.mail {
+        background: linear-gradient(135deg, var(--teal), rgba(20, 184, 166, 0.5));
+      }
+
+      .qc-ico i {
+        font-size: 20px;
+      }
+
+      .qc-meta strong {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(240, 240, 248, 0.62);
+        font-weight: 500;
+      }
+
+      .qc-meta a {
+        display: inline-block;
+        margin-top: 2px;
+        color: rgba(240, 240, 248, 0.92);
+        font-weight: 600;
+      }
+
+      .hours {
+        margin-top: 14px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .hours-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.02);
+        color: rgba(240, 240, 248, 0.78);
+      }
+
+      .hours-row strong {
+        color: rgba(240, 240, 248, 0.9);
+        font-weight: 600;
+      }
+
+      .hours-row.closed {
+        color: rgba(239, 68, 68, 0.9);
+        border-color: rgba(239, 68, 68, 0.25);
+        background: rgba(239, 68, 68, 0.06);
+      }
+
+      /* CTA banner */
+      .cta-banner {
+        padding: 70px 0;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta-banner::before {
+        content: "";
+        position: absolute;
+        inset: -40px;
+        background: radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 255, 255, 0.14),
+            transparent 60%
+          ),
+          radial-gradient(circle at 70% 120%, rgba(20, 184, 166, 0.25), transparent 55%);
+        filter: blur(20px);
+        opacity: 0.8;
+        pointer-events: none;
+      }
+
+      .cta-inner {
+        position: relative;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 14px;
+      }
+
+      .cta-inner h2 {
+        color: #fff;
+      }
+
+      .cta-inner p {
+        color: rgba(255, 255, 255, 0.88);
+        max-width: 70ch;
+      }
+
+      .cta-actions {
+        margin-top: 8px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      /* Footer */
+      footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(10, 10, 15, 0.98);
+      }
+
+      .footer-grid {
+        padding: 64px 0 22px 0;
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr 1fr;
+        gap: 18px;
+      }
+
+      .footer-brand {
+        display: grid;
+        gap: 12px;
+      }
+
+      .footer-brand .brand {
+        min-width: auto;
+      }
+
+      .footer-brand p {
+        color: rgba(240, 240, 248, 0.62);
+        max-width: 52ch;
+      }
+
+      .socials {
+        display: flex;
+        gap: 10px;
+        margin-top: 6px;
+      }
+
+      .socials a {
+        width: 40px;
+        height: 40px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        background: rgba(255, 255, 255, 0.03);
+        color: rgba(240, 240, 248, 0.86);
+        transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+      }
+
+      .socials a:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.14);
+      }
+
+      .footer-col h4 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: rgba(240, 240, 248, 0.72);
+        font-family: "DM Sans", system-ui, sans-serif;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .footer-col a,
+      .footer-col span {
+        display: block;
+        padding: 8px 0;
+        color: rgba(240, 240, 248, 0.62);
+      }
+
+      .footer-col a:hover {
+        color: rgba(240, 240, 248, 0.92);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 16px 0;
+        display: flex;
+        gap: 12px;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(240, 240, 248, 0.62);
+        font-size: 13px;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .nav {
+          grid-template-columns: 1fr auto;
+        }
+        .nav-links {
+          display: none;
+        }
+        .nav-toggle {
+          display: inline-grid;
+          place-items: center;
+        }
+        .projects-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .team-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .footer-grid {
+          grid-template-columns: 1.4fr 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .section {
+          padding: 78px 0;
+        }
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+        .why-grid {
+          grid-template-columns: 1fr;
+        }
+        .tech-badges {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+        .timeline {
+          grid-template-columns: 1fr;
+        }
+        .timeline::after {
+          left: 26px;
+          right: auto;
+          top: 26px;
+          bottom: 26px;
+          width: 2px;
+          height: auto;
+          transform-origin: center top;
+          transform: scaleY(0);
+        }
+        .timeline.visible::after {
+          transform: scaleY(1);
+        }
+        .step .num {
+          font-size: 56px;
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+        .form-card {
+          padding: 26px;
+        }
+        .hero-stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .hero-stats .stat:nth-child(3) {
+          border-left: none;
+        }
+        .hero-stats .stat {
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .hero-stats .stat:nth-child(1),
+        .hero-stats .stat:nth-child(2) {
+          border-top: none;
+        }
+        .hero-stats .stat + .stat {
+          border-left: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .hero-stats .stat:nth-child(2) {
+          border-left: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .hero-stats .stat:nth-child(3) {
+          border-left: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .orb,
+        .scroll-indicator i,
+        .t-track,
+        .tech-float .ti {
+          animation: none !important;
+        }
+        .reveal {
+          transition: none !important;
+          opacity: 1;
+          transform: none;
+        }
+        .btn,
+        .card,
+        .service-card,
+        .socials a,
+        .icon-btn {
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav-wrap" id="site-header">
+      <div class="container nav">
+        <a class="brand" href="#home" aria-label="Fluxify Home">
+          <span class="logo" aria-hidden="true">
+            <svg viewBox="0 0 120 120" width="38" height="38" role="img" aria-label="Fluxify logo">
+              <defs>
+                <linearGradient id="fluxGrad" x1="10%" y1="10%" x2="95%" y2="90%">
+                  <stop offset="0%" stop-color="#5b6ef5" />
+                  <stop offset="50%" stop-color="#7c3aed" />
+                  <stop offset="100%" stop-color="#14b8a6" />
+                </linearGradient>
+                <linearGradient id="fluxGradSoft" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="rgba(255,255,255,0.35)" />
+                  <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+                </linearGradient>
+                <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+                  <feGaussianBlur stdDeviation="6" result="b" />
+                  <feColorMatrix
+                    in="b"
+                    type="matrix"
+                    values="
+                      1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 0.55 0"
+                    result="g"
+                  />
+                  <feMerge>
+                    <feMergeNode in="g" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- Fluid F (stylized) -->
+              <path
+                filter="url(#glow)"
+                fill="url(#fluxGrad)"
+                d="M38 16c15 0 34 0 48 0 6 0 10 4 10 9 0 5-3 8-8 11-9 5-19 9-29 12 9 2 17 6 22 11 4 4 6 9 5 14-1 6-6 10-14 10H58v18c0 7-6 12-13 12H33c-7 0-12-6-12-12V29c0-7 6-13 13-13h4z"
+              />
+
+              <!-- Inner cut / highlight -->
+              <path
+                fill="rgba(255,255,255,0.12)"
+                d="M39 27h41c3 0 5 2 5 4 0 2-1 3-4 5-10 6-24 10-36 12 10 3 18 7 22 12 2 2 3 5 3 8 0 4-3 7-9 7H52c-4 0-7 3-7 7v21c0 3-2 5-5 5h-6c-3 0-5-2-5-5V32c0-3 2-5 5-5h5z"
+              />
+
+              <!-- Embedded <> -->
+              <g transform="translate(0,2)">
+                <path
+                  d="M54 56l-12 8 12 8"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.85)"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M66 56l12 8-12 8"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.85)"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </span>
+          <span class="wordmark" aria-label="Fluxify">
+            <span class="dark">FLUXY</span><span class="fy">FY</span>
+          </span>
+        </a>
+
+        <div class="nav-links" aria-label="Primary Navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#tech">Tech Stack</a>
+          <a href="#projects">Projects</a>
+          <a href="#process">Process</a>
+          <a href="#team">Team</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="btn primary" href="#contact"><i class="ri-sparkling-2-line"></i>Get Started</a>
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <i class="ri-menu-3-line" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="overlay" id="mobile-nav" aria-hidden="true">
+      <div class="overlay-top">
+        <a class="brand" href="#home" aria-label="Fluxify Home (mobile)">
+          <span class="logo" aria-hidden="true">
+            <svg viewBox="0 0 120 120" width="38" height="38" role="img" aria-label="Fluxify logo">
+              <defs>
+                <linearGradient id="fluxGradM" x1="10%" y1="10%" x2="95%" y2="90%">
+                  <stop offset="0%" stop-color="#5b6ef5" />
+                  <stop offset="50%" stop-color="#7c3aed" />
+                  <stop offset="100%" stop-color="#14b8a6" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="url(#fluxGradM)"
+                d="M38 16c15 0 34 0 48 0 6 0 10 4 10 9 0 5-3 8-8 11-9 5-19 9-29 12 9 2 17 6 22 11 4 4 6 9 5 14-1 6-6 10-14 10H58v18c0 7-6 12-13 12H33c-7 0-12-6-12-12V29c0-7 6-13 13-13h4z"
+              />
+              <g transform="translate(0,2)">
+                <path
+                  d="M54 56l-12 8 12 8"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.9)"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M66 56l12 8-12 8"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.9)"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </span>
+          <span class="wordmark"><span class="dark">FLUXY</span><span class="fy">FY</span></span>
+        </a>
+        <button class="overlay-close" id="overlay-close" type="button" aria-label="Close menu">
+          <i class="ri-close-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="overlay-links" aria-label="Mobile Navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#process">Process</a>
+        <a href="#team">Team</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="overlay-bottom">
+        <a class="btn primary" href="#contact"><i class="ri-sparkling-2-line"></i>Get Started</a>
+        <a class="btn ghost" href="https://wa.me/919207842646" target="_blank" rel="noopener noreferrer"
+          ><i class="ri-whatsapp-line"></i>Chat on WhatsApp</a
+        >
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="home" aria-label="Hero">
+        <div class="orbs" aria-hidden="true">
+          <div class="orb one"></div>
+          <div class="orb two"></div>
+          <div class="orb three"></div>
+        </div>
+
+        <div class="container hero-grid">
+          <span class="tag">✦ Kerala's #1 Web Agency</span>
+          <h1>
+            <span class="line">We Build Websites</span>
+            <span class="line">That Bring Customers</span>
+          </h1>
+          <p>
+            Transform your local business with a stunning online presence. We create premium,
+            high-converting websites for shops, restaurants, gyms, and service providers that turn
+            visitors into loyal customers.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects"><i class="ri-eye-line"></i>View Our Work →</a>
+            <a class="btn ghost" href="#contact"><i class="ri-rocket-line"></i>Start a Project</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Key stats">
+            <div class="stat">
+              <div class="num">50+</div>
+              <div class="label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="num">4</div>
+              <div class="label">Experts</div>
+            </div>
+            <div class="stat">
+              <div class="num">5</div>
+              <div class="label">Day Delivery</div>
+            </div>
+            <div class="stat">
+              <div class="num">100%</div>
+              <div class="label">Responsive</div>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-indicator" href="#services" aria-label="Scroll to Services">
+          <i class="ri-arrow-down-s-line" aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="kicker">OUR SERVICES</div>
+            <h2>What We Offer</h2>
+            <p>
+              End-to-end design and development for modern, fast, and conversion-focused websites —
+              crafted for local businesses across Kerala.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="card service-card reveal">
+              <div class="service-accent" aria-hidden="true"></div>
+              <div class="service-icon"><i class="ri-brush-4-line" aria-hidden="true"></i></div>
+              <h3>Web Design</h3>
+              <p>
+                Stunning, modern designs that capture your brand essence and create memorable first
+                impressions for your customers.
+              </p>
+              <a class="learn" href="./services/web-design.html">Learn More <i class="ri-arrow-right-line"></i></a>
+            </article>
+
+            <article class="card service-card reveal">
+              <div class="service-accent" aria-hidden="true"></div>
+              <div class="service-icon"><i class="ri-code-s-slash-line" aria-hidden="true"></i></div>
+              <h3>Frontend Development</h3>
+              <p>
+                Clean, efficient code that brings designs to life with smooth animations and
+                lightning-fast performance.
+              </p>
+              <a class="learn" href="./services/frontend.html">Learn More <i class="ri-arrow-right-line"></i></a>
+            </article>
+
+            <article class="card service-card reveal">
+              <div class="service-accent" aria-hidden="true"></div>
+              <div class="service-icon"><i class="ri-smartphone-line" aria-hidden="true"></i></div>
+              <h3>Mobile Responsive</h3>
+              <p>
+                Websites that look perfect on every device, from desktop monitors to smartphones and
+                tablets.
+              </p>
+              <a class="learn" href="./services/mobile.html">Learn More <i class="ri-arrow-right-line"></i></a>
+            </article>
+
+            <article class="card service-card reveal">
+              <div class="service-accent" aria-hidden="true"></div>
+              <div class="service-icon"><i class="ri-search-eye-line" aria-hidden="true"></i></div>
+              <h3>SEO Optimization</h3>
+              <p>
+                Get found on Google! We optimize your site to rank higher and attract more local
+                customers.
+              </p>
+              <a class="learn" href="./services/seo.html">Learn More <i class="ri-arrow-right-line"></i></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY -->
+      <section class="section alt" id="why">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="kicker">WHY CHOOSE US</div>
+            <h2>We Don't Just Build Websites, We Build Digital Experiences</h2>
+            <p>
+              Strategy-first design, reliable delivery, and ongoing support — so your website keeps
+              bringing customers long after launch.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <div class="card why-card reveal">
+              <i class="ri-focus-2-line" aria-hidden="true"></i>
+              <h3>Tailored for Local Businesses</h3>
+              <p>
+                We understand local markets and craft messaging, pages, and calls-to-action that
+                turn nearby visitors into paying customers.
+              </p>
+            </div>
+            <div class="card why-card reveal">
+              <i class="ri-flashlight-line" aria-hidden="true"></i>
+              <h3>Fast Turnaround Time</h3>
+              <p>Get your website live within days, not months — without compromising quality.</p>
+            </div>
+            <div class="card why-card reveal">
+              <i class="ri-tools-line" aria-hidden="true"></i>
+              <h3>Ongoing Support</h3>
+              <p>Free maintenance and updates included after launch to keep everything smooth.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH -->
+      <section class="section" id="tech">
+        <div class="container tech-wrap">
+          <div class="tech-float" aria-hidden="true">
+            <div class="ti python"><span>🐍</span>Python</div>
+            <div class="ti html"><span>🧱</span>HTML5</div>
+            <div class="ti css"><span>🎨</span>CSS3</div>
+            <div class="ti js"><span>⚡</span>JavaScript</div>
+            <div class="ti react"><span>⚛</span>React</div>
+            <div class="ti vite"><span>⚡</span>Vite</div>
+            <div class="ti node"><span>🟢</span>Node.js</div>
+            <div class="ti cpp"><span>💠</span>C++</div>
+          </div>
+
+          <div class="section-head reveal">
+            <div class="kicker">TECH STACK</div>
+            <h2>Technologies We Use</h2>
+            <p class="tech-desc">
+              We combine modern UI engineering with proven, performant tooling. The result: fast
+              loading pages, smooth interactions, and a scalable foundation for future growth.
+            </p>
+          </div>
+
+          <div class="tech-badges reveal" aria-label="Tech badges">
+            <div class="tech-badge"><strong>Python</strong><em>Automation</em></div>
+            <div class="tech-badge"><strong>HTML5</strong><em>Semantic</em></div>
+            <div class="tech-badge"><strong>CSS3</strong><em>Design</em></div>
+            <div class="tech-badge"><strong>JavaScript</strong><em>UX</em></div>
+            <div class="tech-badge"><strong>React</strong><em>UI Apps</em></div>
+            <div class="tech-badge"><strong>Vite</strong><em>Tooling</em></div>
+            <div class="tech-badge"><strong>Node.js</strong><em>APIs</em></div>
+            <div class="tech-badge"><strong>C++</strong><em>Performance</em></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="kicker">PORTFOLIO</div>
+            <h2>Featured Projects</h2>
+            <p>
+              Live previews are attempted via sandboxed iframes. If a website blocks embedding,
+              you'll automatically see a clean fallback with a direct link.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article
+              class="card project-card reveal"
+              data-preview
+              data-url="https://malabar-spice-house.vercel.app/"
+              data-title="Malabar Spice House"
+              data-desc="Spice export business website"
+              data-tag="Business Website"
+            >
+              <div class="project-preview">
+                <iframe title="Malabar Spice House preview" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                <div class="project-fallback" aria-hidden="true">
+                  <div class="fallback-inner">
+                    <div class="fallback-title">
+                      <strong>Malabar Spice House</strong>
+                      <span>Preview</span>
+                    </div>
+                    <div class="fallback-note">If embedding is blocked, use the live link below.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Malabar Spice House</h3>
+                  <span class="pill">Business</span>
+                </div>
+                <p>Spice export business website</p>
+                <div class="project-actions">
+                  <a class="btn small primary" href="https://malabar-spice-house.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    >View Live →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="card project-card reveal"
+              data-preview
+              data-url="https://coffee-house-omega-virid.vercel.app/"
+              data-title="Coffee House"
+              data-desc="Café & restaurant website"
+              data-tag="Restaurant"
+            >
+              <div class="project-preview">
+                <iframe title="Coffee House preview" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                <div class="project-fallback" aria-hidden="true">
+                  <div class="fallback-inner">
+                    <div class="fallback-title">
+                      <strong>Coffee House</strong>
+                      <span>Preview</span>
+                    </div>
+                    <div class="fallback-note">If embedding is blocked, use the live link below.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Coffee House</h3>
+                  <span class="pill">Café</span>
+                </div>
+                <p>Café & restaurant website</p>
+                <div class="project-actions">
+                  <a class="btn small primary" href="https://coffee-house-omega-virid.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    >View Live →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="card project-card reveal"
+              data-preview
+              data-url="https://health-tracker-liard-omega.vercel.app/"
+              data-title="Health Tracker"
+              data-desc="Health & wellness app UI"
+              data-tag="App UI"
+            >
+              <div class="project-preview">
+                <iframe title="Health Tracker preview" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                <div class="project-fallback" aria-hidden="true">
+                  <div class="fallback-inner">
+                    <div class="fallback-title">
+                      <strong>Health Tracker</strong>
+                      <span>Preview</span>
+                    </div>
+                    <div class="fallback-note">If embedding is blocked, use the live link below.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Health Tracker</h3>
+                  <span class="pill">App UI</span>
+                </div>
+                <p>Health & wellness app UI</p>
+                <div class="project-actions">
+                  <a class="btn small primary" href="https://health-tracker-liard-omega.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    >View Live →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="card project-card reveal"
+              data-preview
+              data-url="https://kerala-solarpower-mission.vercel.app/"
+              data-title="Kerala Solar Power"
+              data-desc="Solar energy company website"
+              data-tag="Energy"
+            >
+              <div class="project-preview">
+                <iframe title="Kerala Solar Power preview" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                <div class="project-fallback" aria-hidden="true">
+                  <div class="fallback-inner">
+                    <div class="fallback-title">
+                      <strong>Kerala Solar Power</strong>
+                      <span>Preview</span>
+                    </div>
+                    <div class="fallback-note">If embedding is blocked, use the live link below.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Kerala Solar Power</h3>
+                  <span class="pill">Energy</span>
+                </div>
+                <p>Solar energy company</p>
+                <div class="project-actions">
+                  <a class="btn small primary" href="https://kerala-solarpower-mission.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    >View Live →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="card project-card reveal"
+              data-preview
+              data-url="https://nazal-rahman.github.io/CORE-COMMET/"
+              data-title="Core Comet"
+              data-desc="Tech/dev project"
+              data-tag="Developer"
+            >
+              <div class="project-preview">
+                <iframe title="Core Comet preview" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                <div class="project-fallback" aria-hidden="true">
+                  <div class="fallback-inner">
+                    <div class="fallback-title">
+                      <strong>Core Comet</strong>
+                      <span>Preview</span>
+                    </div>
+                    <div class="fallback-note">If embedding is blocked, use the live link below.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Core Comet</h3>
+                  <span class="pill">Dev</span>
+                </div>
+                <p>Tech/dev project</p>
+                <div class="project-actions">
+                  <a class="btn small primary" href="https://nazal-rahman.github.io/CORE-COMMET/" target="_blank" rel="noopener noreferrer"
+                    >View Live →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="card project-card reveal"
+              data-preview
+              data-url="https://nazal-rahman.github.io/CINE-SCOPE/"
+              data-title="Cine Scope"
+              data-desc="Movie/cinema app UI"
+              data-tag="UI"
+            >
+              <div class="project-preview">
+                <iframe title="Cine Scope preview" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                <div class="project-fallback" aria-hidden="true">
+                  <div class="fallback-inner">
+                    <div class="fallback-title">
+                      <strong>Cine Scope</strong>
+                      <span>Preview</span>
+                    </div>
+                    <div class="fallback-note">If embedding is blocked, use the live link below.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Cine Scope</h3>
+                  <span class="pill">UI</span>
+                </div>
+                <p>Movie/cinema app UI</p>
+                <div class="project-actions">
+                  <a class="btn small primary" href="https://nazal-rahman.github.io/CINE-SCOPE/" target="_blank" rel="noopener noreferrer"
+                    >View Live →</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section alt" id="process">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="kicker">PROCESS</div>
+            <h2>How We Work</h2>
+            <p>
+              A streamlined workflow that keeps you involved while we ship fast — with clear
+              milestones and consistent communication.
+            </p>
+          </div>
+
+          <div class="timeline reveal">
+            <article class="card step">
+              <div class="num" aria-hidden="true">01</div>
+              <div class="icon"><i class="ri-search-line" aria-hidden="true"></i></div>
+              <h3>Discovery</h3>
+              <p>We learn about your business, goals, and target audience to create a tailored strategy.</p>
+            </article>
+            <article class="card step">
+              <div class="num" aria-hidden="true">02</div>
+              <div class="icon"><i class="ri-palette-line" aria-hidden="true"></i></div>
+              <h3>Design</h3>
+              <p>Creating stunning mockups and prototypes that align with your brand identity.</p>
+            </article>
+            <article class="card step">
+              <div class="num" aria-hidden="true">03</div>
+              <div class="icon"><i class="ri-code-line" aria-hidden="true"></i></div>
+              <h3>Development</h3>
+              <p>Building your website with clean code, animations, and optimal performance.</p>
+            </article>
+            <article class="card step">
+              <div class="num" aria-hidden="true">04</div>
+              <div class="icon"><i class="ri-rocket-2-line" aria-hidden="true"></i></div>
+              <h3>Launch</h3>
+              <p>Deploying your website and providing ongoing support and maintenance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="section" id="team">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="kicker">TEAM</div>
+            <h2>Meet the Experts</h2>
+            <p>Small team. Big output. Focused on quality, speed, and real business results.</p>
+          </div>
+
+          <div class="team-grid">
+            <article class="card team-card reveal">
+              <div class="avatar" aria-hidden="true">NR</div>
+              <h3>Nazal Rahman</h3>
+              <div class="role">Founder & Developer</div>
+              <p>
+                Passionate about creating digital experiences that help local businesses thrive in
+                the online world.
+              </p>
+              <div class="team-actions" aria-label="Nazal contact actions">
+                <a class="icon-btn" aria-label="Call Nazal" href="tel:+919207842646"><i class="ri-phone-line"></i></a>
+                <a
+                  class="icon-btn whatsapp"
+                  aria-label="WhatsApp Nazal"
+                  href="https://wa.me/919207842646"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a class="icon-btn" aria-label="Email Nazal" href="mailto:nazalrahman14@gmail.com"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </article>
+
+            <article class="card team-card reveal">
+              <div class="avatar" aria-hidden="true">AJ</div>
+              <h3>Aslah Jinan</h3>
+              <div class="role">Co-founder & Designer</div>
+              <p>Bringing creative visions to life with stunning designs that capture attention and drive engagement.</p>
+              <div class="team-actions" aria-label="Aslah contact actions">
+                <a class="icon-btn" aria-label="Call Aslah" href="tel:+919446435247"><i class="ri-phone-line"></i></a>
+                <a
+                  class="icon-btn whatsapp"
+                  aria-label="WhatsApp Aslah"
+                  href="https://wa.me/919446435247"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a class="icon-btn" aria-label="Email Aslah" href="mailto:aslahjinan@gmail.com"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </article>
+
+            <article class="card team-card reveal">
+              <div class="avatar" aria-hidden="true">AM</div>
+              <h3>Abdul Manaf</h3>
+              <div class="role">Client Manager</div>
+              <p>Crafting intuitive user experiences that delight visitors and convert them into loyal customers.</p>
+              <div class="team-actions" aria-label="Manaf contact actions">
+                <a class="icon-btn" aria-label="Call Abdul Manaf" href="tel:+919342594600"><i class="ri-phone-line"></i></a>
+                <a
+                  class="icon-btn whatsapp"
+                  aria-label="WhatsApp Abdul Manaf"
+                  href="https://wa.me/919342594600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a class="icon-btn" aria-label="Email Abdul Manaf" href="mailto:opmanaf85@gmail.com"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </article>
+
+            <article class="card team-card reveal">
+              <div class="avatar" aria-hidden="true">AL</div>
+              <h3>Abdul Latheef</h3>
+              <div class="role">Marketing Manager</div>
+              <p>
+                Driving brand visibility and growth through smart digital marketing strategies that put our clients in
+                front of the right audience.
+              </p>
+              <div class="team-actions" aria-label="Latheef contact actions">
+                <a class="icon-btn" aria-label="Call Abdul Latheef" href="tel:+917902870121"><i class="ri-phone-line"></i></a>
+                <a
+                  class="icon-btn whatsapp"
+                  aria-label="WhatsApp Abdul Latheef"
+                  href="https://wa.me/917902870121"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="kicker">TESTIMONIALS</div>
+            <h2>What Our Clients Say</h2>
+            <p>Real feedback from local businesses — the kind of results we aim for in every project.</p>
+          </div>
+
+          <div class="t-scroller reveal" id="t-scroller" aria-label="Testimonials carousel">
+            <div class="t-track" id="t-track">
+              <!-- Set A -->
+              <article class="review">
+                <div class="stars" aria-label="5 stars">★★★★★</div>
+                <p>
+                  “Fluxify transformed our restaurant's online presence completely. We saw a 3x increase in
+                  reservations within the first month of our new website going live!”
+                </p>
+                <div class="reviewer">
+                  <div class="mini" aria-hidden="true">RM</div>
+                  <div>
+                    <strong>Rahul Menon</strong>
+                    <span>Owner — Spice Garden Restaurant, Kozhikode</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review">
+                <div class="stars" aria-label="5 stars">★★★★★</div>
+                <p>
+                  “The team delivered our export company website in just 6 days. Clean design, fast loading, and
+                  it looks amazing on mobile. Highly recommend!”
+                </p>
+                <div class="reviewer">
+                  <div class="mini" aria-hidden="true">SK</div>
+                  <div>
+                    <strong>Suresh Kumar</strong>
+                    <span>MD — Kerala Spice Exports</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review">
+                <div class="stars" aria-label="5 stars">★★★★★</div>
+                <p>
+                  “Professional, creative, and very responsive. Nazal and team understood our brand perfectly
+                  and built exactly what we envisioned.”
+                </p>
+                <div class="reviewer">
+                  <div class="mini" aria-hidden="true">AN</div>
+                  <div>
+                    <strong>Anitha Nair</strong>
+                    <span>Owner — FitLife Gym, Calicut</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review">
+                <div class="stars" aria-label="5 stars">★★★★★</div>
+                <p>
+                  “Our machinery company needed a serious online presence. Fluxify delivered a powerful,
+                  trust-building website that's already bringing in international inquiries.”
+                </p>
+                <div class="reviewer">
+                  <div class="mini" aria-hidden="true">MA</div>
+                  <div>
+                    <strong>Mohammed Ashraf</strong>
+                    <span>Director — Precision Tools Kerala</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review">
+                <div class="stars" aria-label="5 stars">★★★★★</div>
+                <p>
+                  “Affordable, fast, and stunning results. I was skeptical at first but the final website blew
+                  me away. Our customers keep complimenting how modern it looks.”
+                </p>
+                <div class="reviewer">
+                  <div class="mini" aria-hidden="true">DK</div>
+                  <div>
+                    <strong>Divya Krishnan</strong>
+                    <span>Founder — Bloom Boutique</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Set B (duplicate for seamless loop) -->
+              <article class="review" aria-hidden="true">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “Fluxify transformed our restaurant's online presence completely. We saw a 3x increase in
+                  reservations within the first month of our new website going live!”
+                </p>
+                <div class="reviewer">
+                  <div class="mini">RM</div>
+                  <div>
+                    <strong>Rahul Menon</strong>
+                    <span>Owner — Spice Garden Restaurant, Kozhikode</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review" aria-hidden="true">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “The team delivered our export company website in just 6 days. Clean design, fast loading, and
+                  it looks amazing on mobile. Highly recommend!”
+                </p>
+                <div class="reviewer">
+                  <div class="mini">SK</div>
+                  <div>
+                    <strong>Suresh Kumar</strong>
+                    <span>MD — Kerala Spice Exports</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review" aria-hidden="true">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “Professional, creative, and very responsive. Nazal and team understood our brand perfectly
+                  and built exactly what we envisioned.”
+                </p>
+                <div class="reviewer">
+                  <div class="mini">AN</div>
+                  <div>
+                    <strong>Anitha Nair</strong>
+                    <span>Owner — FitLife Gym, Calicut</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review" aria-hidden="true">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “Our machinery company needed a serious online presence. Fluxify delivered a powerful,
+                  trust-building website that's already bringing in international inquiries.”
+                </p>
+                <div class="reviewer">
+                  <div class="mini">MA</div>
+                  <div>
+                    <strong>Mohammed Ashraf</strong>
+                    <span>Director — Precision Tools Kerala</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review" aria-hidden="true">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “Affordable, fast, and stunning results. I was skeptical at first but the final website blew
+                  me away. Our customers keep complimenting how modern it looks.”
+                </p>
+                <div class="reviewer">
+                  <div class="mini">DK</div>
+                  <div>
+                    <strong>Divya Krishnan</strong>
+                    <span>Founder — Bloom Boutique</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section alt" id="faq">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="kicker">FAQ</div>
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know before starting — quick, clear answers.</p>
+          </div>
+
+          <div class="faq reveal" aria-label="FAQ accordion">
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <strong>What types of businesses does Fluxify work with?</strong>
+                <span class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+              </button>
+              <div class="faq-content">
+                <div class="inner">
+                  Fluxify specializes in creating websites for local businesses including shops, restaurants, gyms, cafes,
+                  retail stores, and small service providers. We understand the unique needs of local businesses and
+                  create solutions that attract more customers.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <strong>How long does it take to build a website?</strong>
+                <span class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+              </button>
+              <div class="faq-content">
+                <div class="inner">
+                  Most projects are completed within 5–10 business days depending on complexity. We follow a streamlined
+                  4-step process: Discovery, Design, Development, and Launch to deliver your website quickly without
+                  compromising quality.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <strong>Do you provide SEO optimization with websites?</strong>
+                <span class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+              </button>
+              <div class="faq-content">
+                <div class="inner">
+                  Yes! Every website we build includes on-page SEO optimization. We ensure proper meta tags, semantic HTML,
+                  fast loading speeds, and mobile responsiveness — all factors that help your website rank higher on Google
+                  and attract local customers.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <strong>Will my website work on mobile phones?</strong>
+                <span class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+              </button>
+              <div class="faq-content">
+                <div class="inner">
+                  Absolutely! All our websites are fully mobile responsive. We design with a mobile-first approach,
+                  ensuring your website looks and works perfectly on smartphones, tablets, and desktops.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <strong>Do you offer ongoing support after launch?</strong>
+                <span class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+              </button>
+              <div class="faq-content">
+                <div class="inner">
+                  Yes, we provide ongoing support and maintenance after your website goes live. Our team is available via
+                  WhatsApp and email for any updates, fixes, or questions you may have.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="kicker">CONTACT</div>
+            <h2>Start Your Project</h2>
+            <p>Ready to transform your business? Let's discuss your project and create something amazing together.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="card form-card reveal">
+              <h3>Send us a message</h3>
+              <form id="contact-form" action="https://formspree.io/f/maqvdndw" method="POST" novalidate>
+                <div class="fields">
+                  <div class="field">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text" placeholder="John Doe" autocomplete="name" required />
+                  </div>
+                  <div class="field">
+                    <label for="email">Email Address</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="john@example.com"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="phone">Phone Number</label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="+91 98765 43210"
+                      autocomplete="tel"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+                  </div>
+                </div>
+
+                <button class="btn primary" id="contact-submit" type="submit" style="width: 100%; margin-top: 16px">
+                  <i class="ri-send-plane-2-line"></i>Send Message ✈
+                </button>
+
+                <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+
+            <div class="side-stack">
+              <div class="card side-card reveal">
+                <h3>Quick Contact</h3>
+                <div class="qc" aria-label="Quick contact methods">
+                  <div class="qc-row">
+                    <div class="qc-ico phone" aria-hidden="true"><i class="ri-phone-line"></i></div>
+                    <div class="qc-meta">
+                      <strong>Call Us</strong>
+                      <a href="tel:+919207842646">+91 9207842646</a>
+                    </div>
+                  </div>
+                  <div class="qc-row">
+                    <div class="qc-ico wa" aria-hidden="true"><i class="ri-whatsapp-line"></i></div>
+                    <div class="qc-meta">
+                      <strong>WhatsApp</strong>
+                      <a href="https://wa.me/919207842646" target="_blank" rel="noopener noreferrer">+91 9207842646</a>
+                    </div>
+                  </div>
+                  <div class="qc-row">
+                    <div class="qc-ico mail" aria-hidden="true"><i class="ri-mail-line"></i></div>
+                    <div class="qc-meta">
+                      <strong>Email Us</strong>
+                      <a href="mailto:nazalrahman14@gmail.com">nazalrahman14@gmail.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card side-card reveal">
+                <h3>Business Hours</h3>
+                <div class="hours" aria-label="Business hours">
+                  <div class="hours-row"><span>Monday – Friday</span><strong>9:00 AM – 6:00 PM</strong></div>
+                  <div class="hours-row"><span>Saturday</span><strong>10:00 AM – 4:00 PM</strong></div>
+                  <div class="hours-row closed"><span>Sunday</span><strong>Closed</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="cta-banner" aria-label="Call to action">
+        <div class="container cta-inner reveal">
+          <h2>Ready to Grow Your Business?</h2>
+          <p>Let's create a stunning website that brings more customers to your door. Get started today!</p>
+          <div class="cta-actions">
+            <a class="btn white" href="#contact"><i class="ri-rocket-line"></i>Start Your Project</a>
+            <a class="btn outline-white" href="https://wa.me/919207842646" target="_blank" rel="noopener noreferrer"
+              ><i class="ri-whatsapp-line"></i>Chat on WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="#home" aria-label="Fluxify Home (footer)">
+              <span class="logo" aria-hidden="true">
+                <svg viewBox="0 0 120 120" width="38" height="38" role="img" aria-label="Fluxify logo">
+                  <defs>
+                    <linearGradient id="fluxGradF" x1="10%" y1="10%" x2="95%" y2="90%">
+                      <stop offset="0%" stop-color="#5b6ef5" />
+                      <stop offset="50%" stop-color="#7c3aed" />
+                      <stop offset="100%" stop-color="#14b8a6" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    fill="url(#fluxGradF)"
+                    d="M38 16c15 0 34 0 48 0 6 0 10 4 10 9 0 5-3 8-8 11-9 5-19 9-29 12 9 2 17 6 22 11 4 4 6 9 5 14-1 6-6 10-14 10H58v18c0 7-6 12-13 12H33c-7 0-12-6-12-12V29c0-7 6-13 13-13h4z"
+                  />
+                  <g transform="translate(0,2)">
+                    <path
+                      d="M54 56l-12 8 12 8"
+                      fill="none"
+                      stroke="rgba(255,255,255,0.9)"
+                      stroke-width="6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M66 56l12 8-12 8"
+                      fill="none"
+                      stroke="rgba(255,255,255,0.9)"
+                      stroke-width="6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </span>
+              <span class="wordmark"><span class="dark">FLUXY</span><span class="fy">FY</span></span>
+            </a>
+            <p>Premium web design agency helping local businesses establish a powerful online presence.</p>
+            <div class="socials" aria-label="Social links">
+              <a href="https://github.com/nazal-rahman" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                ><i class="ri-github-line"></i
+              ></a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                ><i class="ri-instagram-line"></i
+              ></a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                ><i class="ri-linkedin-line"></i
+              ></a>
+              <a href="https://wa.me/919207842646" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                ><i class="ri-whatsapp-line"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="#services">Web Design</a>
+            <a href="#services">Frontend Development</a>
+            <a href="#services">Mobile Responsive</a>
+            <a href="#services">SEO Optimization</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="mailto:nazalrahman14@gmail.com">nazalrahman14@gmail.com</a>
+            <a href="tel:+919207842646">+91 9207842646</a>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <div>© 2025 Fluxify. All rights reserved.</div>
+          <div>Made with ♥ in Kerala</div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      (() => {
+        const header = document.getElementById("site-header");
+        const navToggle = document.getElementById("nav-toggle");
+        const overlay = document.getElementById("mobile-nav");
+        const overlayClose = document.getElementById("overlay-close");
+
+        const setScrolled = () => {
+          if (!header) return;
+          header.classList.toggle("scrolled", window.scrollY > 80);
+        };
+        setScrolled();
+        window.addEventListener("scroll", setScrolled, { passive: true });
+
+        const openOverlay = () => {
+          if (!overlay) return;
+          overlay.classList.add("open");
+          overlay.setAttribute("aria-hidden", "false");
+          navToggle?.setAttribute("aria-expanded", "true");
+          document.body.style.overflow = "hidden";
+        };
+        const closeOverlay = () => {
+          if (!overlay) return;
+          overlay.classList.remove("open");
+          overlay.setAttribute("aria-hidden", "true");
+          navToggle?.setAttribute("aria-expanded", "false");
+          document.body.style.overflow = "";
+        };
+
+        navToggle?.addEventListener("click", () => {
+          if (overlay?.classList.contains("open")) closeOverlay();
+          else openOverlay();
+        });
+        overlayClose?.addEventListener("click", closeOverlay);
+        overlay?.addEventListener("click", (e) => {
+          if (e.target === overlay) closeOverlay();
+        });
+
+        // Smooth scroll + close overlay on anchor clicks
+        const anchorLinks = Array.from(document.querySelectorAll('a[href^="#"]'));
+        anchorLinks.forEach((a) => {
+          a.addEventListener("click", (e) => {
+            const href = a.getAttribute("href");
+            if (!href || href === "#") return;
+            const target = document.querySelector(href);
+            if (!target) return;
+            e.preventDefault();
+            closeOverlay();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            history.pushState(null, "", href);
+          });
+        });
+
+        // Active section highlighting
+        const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
+        const linkById = new Map(
+          navLinks
+            .map((a) => {
+              const href = a.getAttribute("href") || "";
+              const id = href.startsWith("#") ? href.slice(1) : null;
+              return id ? [id, a] : null;
+            })
+            .filter(Boolean)
+        );
+
+        const sections = Array.from(document.querySelectorAll("section[id]"));
+        const ioActive = new IntersectionObserver(
+          (entries) => {
+            const visible = entries
+              .filter((en) => en.isIntersecting)
+              .sort((a, b) => (b.intersectionRatio || 0) - (a.intersectionRatio || 0))[0];
+            if (!visible) return;
+            const id = visible.target.id;
+            navLinks.forEach((a) => a.classList.remove("active"));
+            const active = linkById.get(id);
+            if (active) active.classList.add("active");
+          },
+          { root: null, threshold: 0.15, rootMargin: "-40% 0px -55% 0px" }
+        );
+        sections.forEach((s) => ioActive.observe(s));
+
+        // Scroll reveal
+        const reveals = Array.from(document.querySelectorAll(".reveal"));
+        const ioReveal = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((en) => {
+              if (!en.isIntersecting) return;
+              en.target.classList.add("visible");
+              obs.unobserve(en.target);
+            });
+          },
+          { threshold: 0.15 }
+        );
+        reveals.forEach((el) => ioReveal.observe(el));
+
+        // FAQ accordion
+        const faqItems = Array.from(document.querySelectorAll(".faq-item"));
+        faqItems.forEach((item) => {
+          const btn = item.querySelector(".faq-btn");
+          btn?.addEventListener("click", () => {
+            const isOpen = item.classList.contains("open");
+            faqItems.forEach((it) => {
+              it.classList.remove("open");
+              const b = it.querySelector(".faq-btn");
+              b?.setAttribute("aria-expanded", "false");
+              const icon = it.querySelector(".faq-icon i");
+              if (icon) icon.className = "ri-add-line";
+            });
+            if (!isOpen) {
+              item.classList.add("open");
+              btn.setAttribute("aria-expanded", "true");
+              const icon = item.querySelector(".faq-icon i");
+              if (icon) icon.className = "ri-subtract-line";
+            }
+          });
+        });
+
+        // Testimonials pause on hover (JS-driven)
+        const tScroller = document.getElementById("t-scroller");
+        if (tScroller) {
+          const pause = () => tScroller.classList.add("paused");
+          const play = () => tScroller.classList.remove("paused");
+          tScroller.addEventListener("mouseenter", pause);
+          tScroller.addEventListener("mouseleave", play);
+          tScroller.addEventListener("touchstart", pause, { passive: true });
+          tScroller.addEventListener("touchend", play, { passive: true });
+        }
+
+        // Contact form (Formspree) without reload
+        const form = document.getElementById("contact-form");
+        const statusEl = document.getElementById("form-status");
+        const submitBtn = document.getElementById("contact-submit");
+
+        const setStatus = (type, message) => {
+          if (!statusEl) return;
+          statusEl.className = "form-status " + (type || "");
+          statusEl.textContent = message || "";
+        };
+
+        form?.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          try {
+            setStatus("", "");
+            submitBtn?.setAttribute("disabled", "true");
+            submitBtn?.classList.add("is-loading");
+
+            const data = new FormData(form);
+            const res = await fetch(form.action, {
+              method: "POST",
+              body: data,
+              headers: { Accept: "application/json" },
+            });
+
+            if (res.ok) {
+              form.reset();
+              setStatus("ok", "Message sent! We'll get back to you within 24 hours.");
+            } else {
+              let msg = "Oops! Something went wrong. Please try again.";
+              try {
+                const json = await res.json();
+                if (json && json.errors && json.errors[0] && json.errors[0].message) {
+                  msg = json.errors[0].message;
+                }
+              } catch (_) {}
+              setStatus("err", msg);
+            }
+          } catch (err) {
+            setStatus("err", "Network error. Please check your connection and try again.");
+          } finally {
+            submitBtn?.removeAttribute("disabled");
+            submitBtn?.classList.remove("is-loading");
+          }
+        });
+
+        // Project iframe previews: lazy load + fallback if blocked
+        const previewCards = Array.from(document.querySelectorAll("[data-preview]"));
+        const initPreview = (card) => {
+          if (!card || card.dataset.loaded === "1") return;
+          card.dataset.loaded = "1";
+          const url = card.getAttribute("data-url");
+          const iframe = card.querySelector("iframe");
+          if (!url || !iframe) return;
+
+          let done = false;
+          const start = performance.now();
+
+          const markReady = () => {
+            if (done) return;
+            done = true;
+            card.classList.add("preview-ready");
+          };
+
+          const markFallback = () => {
+            if (done) return;
+            done = true;
+            // fallback is already visible; keep it
+          };
+
+          const timeout = window.setTimeout(() => {
+            if (!done) markFallback();
+          }, 3500);
+
+          iframe.addEventListener("load", () => {
+            window.clearTimeout(timeout);
+            let href = "";
+            try {
+              href = iframe.contentWindow.location.href || "";
+            } catch (_) {
+              // Cross-origin access throws on success; treat as likely loaded.
+              markReady();
+              return;
+            }
+
+            const elapsed = performance.now() - start;
+            if (href.startsWith("about:")) {
+              markFallback();
+              return;
+            }
+
+            if (elapsed < 650) {
+              // If it loaded unusually fast and is still readable, assume it didn't navigate.
+              markFallback();
+              return;
+            }
+
+            markReady();
+          });
+
+          iframe.src = url;
+        };
+
+        const ioPreview = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((en) => {
+              if (!en.isIntersecting) return;
+              initPreview(en.target);
+              ioPreview.unobserve(en.target);
+            });
+          },
+          { threshold: 0.1 }
+        );
+        previewCards.forEach((c) => ioPreview.observe(c));
+      })();
+    </script>
+  </body>
+</html>
