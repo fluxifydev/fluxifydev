@@ -13,6 +13,78 @@
       name="description"
       content="Fluxify Mobile Responsive — mobile-first, cross-device websites that look perfect everywhere."
     />
+    <link rel="canonical" href="https://www.fluxifydev.in/services/mobile.html" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fluxify" />
+    <meta property="og:title" content="Fluxify — Mobile Responsive" />
+    <meta
+      property="og:description"
+      content="Fluxify Mobile Responsive — mobile-first, cross-device websites that look perfect everywhere."
+    />
+    <meta property="og:url" content="https://www.fluxifydev.in/services/mobile.html" />
+    <meta property="og:image" content="https://www.fluxifydev.in/images/fluxify-logo.png" />
+    <meta property="og:image:alt" content="Fluxify logo" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fluxify — Mobile Responsive" />
+    <meta
+      name="twitter:description"
+      content="Fluxify Mobile Responsive — mobile-first, cross-device websites that look perfect everywhere."
+    />
+    <meta name="twitter:image" content="https://www.fluxifydev.in/images/fluxify-logo.png" />
+    <meta name="twitter:image:alt" content="Fluxify logo" />
+    <meta name="twitter:url" content="https://www.fluxifydev.in/services/mobile.html" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.fluxifydev.in/#organization",
+            "name": "Fluxify",
+            "url": "https://www.fluxifydev.in/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.fluxifydev.in/images/fluxify-logo.png"
+            },
+            "description": "Fluxify is a premium web design agency in Kerala, India. We build high-converting, responsive websites for local businesses with fast turnaround.",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+91 9207842646",
+                "email": "nazalrahman14@gmail.com",
+                "contactType": "sales"
+              }
+            ],
+            "sameAs": ["https://github.com/nazal-rahman"]
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://www.fluxifydev.in/#localbusiness",
+            "name": "Fluxify",
+            "url": "https://www.fluxifydev.in/",
+            "image": "https://www.fluxifydev.in/images/fluxify-logo.png",
+            "description": "Fluxify is a premium web design agency in Kerala, India. We build high-converting, responsive websites for local businesses with fast turnaround.",
+            "telephone": "+91 9207842646",
+            "email": "nazalrahman14@gmail.com",
+            "areaServed": [
+              { "@type": "AdministrativeArea", "name": "Kozhikode" },
+              { "@type": "AdministrativeArea", "name": "Kerala" }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kozhikode",
+              "addressRegion": "Kerala",
+              "addressCountry": "IN"
+            }
+          }
+        ]
+      }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -317,7 +389,8 @@
         font-size: 18px;
         margin-top: 1px;
       }
-      .features strong {
+      .features strong,
+      .features .feat-title {
         display: block;
         color: rgba(240, 240, 248, 0.92);
         font-weight: 700;
@@ -337,7 +410,8 @@
         background: rgba(255, 255, 255, 0.02);
         color: rgba(240, 240, 248, 0.78);
       }
-      .price strong {
+      .price strong,
+      .price .price-value {
         color: rgba(240, 240, 248, 0.92);
       }
 
@@ -388,7 +462,7 @@
       <div class="container nav">
         <a class="brand" href="../index.html#home" aria-label="Fluxify Home">
           <span class="logo" aria-hidden="true">
-            <img src="../images/fluxify-logo.png" width="38" height="38" alt="" />
+            <img src="../images/fluxify-logo.png" width="38" height="38" alt="Fluxify logo" />
           </span>
           <span class="wordmark"><span class="dark">FLUXY</span><span class="fy">FY</span></span>
         </a>
@@ -470,42 +544,42 @@
                 <li>
                   <i class="ri-smartphone-line" aria-hidden="true"></i>
                   <div>
-                    <strong>Mobile-first layout</strong>
+                    <span class="feat-title">Mobile-first layout</span>
                     <div class="muted">Designed for small screens first, then enhanced for larger displays.</div>
                   </div>
                 </li>
                 <li>
                   <i class="ri-hand-coin-line" aria-hidden="true"></i>
                   <div>
-                    <strong>Touch-friendly interactions</strong>
+                    <span class="feat-title">Touch-friendly interactions</span>
                     <div class="muted">Comfortable tap targets, spacing, and menus for thumbs.</div>
                   </div>
                 </li>
                 <li>
                   <i class="ri-image-line" aria-hidden="true"></i>
                   <div>
-                    <strong>Responsive media</strong>
+                    <span class="feat-title">Responsive media</span>
                     <div class="muted">Images and videos scale cleanly without layout jumps.</div>
                   </div>
                 </li>
                 <li>
                   <i class="ri-window-line" aria-hidden="true"></i>
                   <div>
-                    <strong>Breakpoint refinement</strong>
+                    <span class="feat-title">Breakpoint refinement</span>
                     <div class="muted">Tablet and desktop layouts optimized for readability and conversion.</div>
                   </div>
                 </li>
                 <li>
                   <i class="ri-speed-up-line" aria-hidden="true"></i>
                   <div>
-                    <strong>Mobile performance tuning</strong>
+                    <span class="feat-title">Mobile performance tuning</span>
                     <div class="muted">Fast loading on 4G/slow devices with optimized assets.</div>
                   </div>
                 </li>
                 <li>
                   <i class="ri-check-double-line" aria-hidden="true"></i>
                   <div>
-                    <strong>Cross-browser checks</strong>
+                    <span class="feat-title">Cross-browser checks</span>
                     <div class="muted">Consistent behavior across modern browsers.</div>
                   </div>
                 </li>
@@ -520,9 +594,9 @@
                 Responsive work depends on layout complexity and number of templates.
               </p>
               <div class="pricing">
-                <div class="price"><span>Responsive review + fixes</span><strong>According to your requirement</strong></div>
-                <div class="price"><span>Full responsive rebuild</span><strong>According to your requirement</strong></div>
-                <div class="price"><span>Premium (custom UI)</span><strong>According to your requirement</strong></div>
+                <div class="price"><span>Responsive review + fixes</span><span class="price-value">According to your requirement</span></div>
+                <div class="price"><span>Full responsive rebuild</span><span class="price-value">According to your requirement</span></div>
+                <div class="price"><span>Premium (custom UI)</span><span class="price-value">According to your requirement</span></div>
               </div>
               <p class="muted" style="margin-top: 12px">
                 Send your current website link and we’ll share a quick improvement plan.

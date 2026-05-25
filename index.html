@@ -9,6 +9,78 @@
       name="description"
       content="Fluxify is a premium web design agency in Kerala, India. We build high-converting, responsive websites for local businesses with fast turnaround."
     />
+    <link rel="canonical" href="https://www.fluxifydev.in/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fluxify" />
+    <meta property="og:title" content="Fluxify — Premium Web Design Agency in Kerala" />
+    <meta
+      property="og:description"
+      content="Fluxify is a premium web design agency in Kerala, India. We build high-converting, responsive websites for local businesses with fast turnaround."
+    />
+    <meta property="og:url" content="https://www.fluxifydev.in/" />
+    <meta property="og:image" content="https://www.fluxifydev.in/images/fluxify-logo.png" />
+    <meta property="og:image:alt" content="Fluxify logo" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fluxify — Premium Web Design Agency in Kerala" />
+    <meta
+      name="twitter:description"
+      content="Fluxify is a premium web design agency in Kerala, India. We build high-converting, responsive websites for local businesses with fast turnaround."
+    />
+    <meta name="twitter:image" content="https://www.fluxifydev.in/images/fluxify-logo.png" />
+    <meta name="twitter:image:alt" content="Fluxify logo" />
+    <meta name="twitter:url" content="https://www.fluxifydev.in/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.fluxifydev.in/#organization",
+            "name": "Fluxify",
+            "url": "https://www.fluxifydev.in/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.fluxifydev.in/images/fluxify-logo.png"
+            },
+            "description": "Fluxify is a premium web design agency in Kerala, India. We build high-converting, responsive websites for local businesses with fast turnaround.",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+91 9207842646",
+                "email": "nazalrahman14@gmail.com",
+                "contactType": "sales"
+              }
+            ],
+            "sameAs": ["https://github.com/nazal-rahman"]
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://www.fluxifydev.in/#localbusiness",
+            "name": "Fluxify",
+            "url": "https://www.fluxifydev.in/",
+            "image": "https://www.fluxifydev.in/images/fluxify-logo.png",
+            "description": "Fluxify is a premium web design agency in Kerala, India. We build high-converting, responsive websites for local businesses with fast turnaround.",
+            "telephone": "+91 9207842646",
+            "email": "nazalrahman14@gmail.com",
+            "areaServed": [
+              { "@type": "AdministrativeArea", "name": "Kozhikode" },
+              { "@type": "AdministrativeArea", "name": "Kerala" }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kozhikode",
+              "addressRegion": "Kerala",
+              "addressCountry": "IN"
+            }
+          }
+        ]
+      }
+    </script>
     <title>Fluxify — Premium Web Design Agency in Kerala</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -927,7 +999,8 @@
         gap: 10px;
       }
 
-      .tech-badge strong {
+      .tech-badge strong,
+      .tech-badge .tech-main {
         color: rgba(240, 240, 248, 0.92);
         font-weight: 600;
         font-size: 13px;
@@ -1019,7 +1092,8 @@
         gap: 10px;
       }
 
-      .fallback-title strong {
+      .fallback-title strong,
+      .fallback-title .fallback-name {
         font-weight: 700;
         color: rgba(240, 240, 248, 0.92);
       }
@@ -1051,7 +1125,12 @@
         gap: 12px;
       }
 
-      .project-body h3 {
+      .project-body h3,
+      .project-body .project-title {
+        font-family: "Syne", system-ui, sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.08;
+        margin: 0;
         font-size: 18px;
         font-weight: 800;
       }
@@ -1136,7 +1215,12 @@
         font-size: 22px;
       }
 
-      .step h3 {
+      .step h3,
+      .step .step-title {
+        font-family: "Syne", system-ui, sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.08;
+        margin: 0;
         font-size: 18px;
         font-weight: 800;
         margin-top: 12px;
@@ -1187,7 +1271,12 @@
         transform: rotate(-10deg);
       }
 
-      .team-card h3 {
+      .team-card h3,
+      .team-card .team-name {
+        font-family: "Syne", system-ui, sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.08;
+        margin: 0;
         font-size: 18px;
         font-weight: 800;
       }
@@ -1296,7 +1385,8 @@
         color: rgba(240, 240, 248, 0.9);
       }
 
-      .reviewer strong {
+      .reviewer strong,
+      .reviewer .reviewer-name {
         font-size: 13px;
         color: rgba(240, 240, 248, 0.92);
       }
@@ -1334,7 +1424,8 @@
         text-align: left;
       }
 
-      .faq-btn strong {
+      .faq-btn strong,
+      .faq-btn .faq-q {
         font-family: "Syne", system-ui, sans-serif;
         font-weight: 800;
         font-size: 16px;
@@ -1515,7 +1606,8 @@
         font-size: 20px;
       }
 
-      .qc-meta strong {
+      .qc-meta strong,
+      .qc-meta .qc-label {
         display: block;
         font-size: 12px;
         letter-spacing: 0.12em;
@@ -1548,7 +1640,8 @@
         color: rgba(240, 240, 248, 0.78);
       }
 
-      .hours-row strong {
+      .hours-row strong,
+      .hours-row .hours-time {
         color: rgba(240, 240, 248, 0.9);
         font-weight: 600;
       }
@@ -1658,7 +1751,8 @@
         border-color: rgba(255, 255, 255, 0.14);
       }
 
-      .footer-col h4 {
+      .footer-col h4,
+      .footer-col .footer-heading {
         font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 0.12em;
@@ -1811,7 +1905,7 @@
       <div class="container nav">
         <a class="brand" href="#home" aria-label="Fluxify Home">
           <span class="logo" aria-hidden="true">
-            <img src="images/fluxify-logo.png" width="38" height="38" alt="" />
+              <img src="images/fluxify-logo.png" width="38" height="38" alt="Fluxify logo" />
           </span>
           <span class="wordmark" aria-label="Fluxify">
             <span class="dark">FLUXY</span><span class="fy">FY</span>
@@ -1850,7 +1944,7 @@
       <div class="overlay-top">
         <a class="brand" href="#home" aria-label="Fluxify Home (mobile)">
           <span class="logo" aria-hidden="true">
-            <img src="images/fluxify-logo.png" width="38" height="38" alt="" />
+              <img src="images/fluxify-logo.png" width="38" height="38" alt="Fluxify logo" />
           </span>
           <span class="wordmark"><span class="dark">FLUXY</span><span class="fy">FY</span></span>
         </a>
@@ -2045,14 +2139,14 @@
           </div>
 
           <div class="tech-badges reveal" aria-label="Tech badges">
-            <div class="tech-badge"><strong>Python</strong><em>Automation</em></div>
-            <div class="tech-badge"><strong>HTML5</strong><em>Semantic</em></div>
-            <div class="tech-badge"><strong>CSS3</strong><em>Design</em></div>
-            <div class="tech-badge"><strong>JavaScript</strong><em>UX</em></div>
-            <div class="tech-badge"><strong>React</strong><em>UI Apps</em></div>
-            <div class="tech-badge"><strong>Vite</strong><em>Tooling</em></div>
-            <div class="tech-badge"><strong>Node.js</strong><em>APIs</em></div>
-            <div class="tech-badge"><strong>C++</strong><em>Performance</em></div>
+            <div class="tech-badge"><span class="tech-main">Python</span><em>Automation</em></div>
+            <div class="tech-badge"><span class="tech-main">HTML5</span><em>Semantic</em></div>
+            <div class="tech-badge"><span class="tech-main">CSS3</span><em>Design</em></div>
+            <div class="tech-badge"><span class="tech-main">JavaScript</span><em>UX</em></div>
+            <div class="tech-badge"><span class="tech-main">React</span><em>UI Apps</em></div>
+            <div class="tech-badge"><span class="tech-main">Vite</span><em>Tooling</em></div>
+            <div class="tech-badge"><span class="tech-main">Node.js</span><em>APIs</em></div>
+            <div class="tech-badge"><span class="tech-main">C++</span><em>Performance</em></div>
           </div>
         </div>
       </section>
@@ -2073,7 +2167,7 @@
             <article
               class="card project-card reveal"
               data-preview
-              data-url="https://malabar-spice-house.vercel.app/"
+              data-url="./go/malabar-spice-house.html"
               data-title="Malabar Spice House"
               data-desc="Spice export business website"
               data-tag="Business Website"
@@ -2083,7 +2177,7 @@
                 <div class="project-fallback" aria-hidden="true">
                   <div class="fallback-inner">
                     <div class="fallback-title">
-                      <strong>Malabar Spice House</strong>
+                      <span class="fallback-name">Malabar Spice House</span>
                       <span>Preview</span>
                     </div>
                     <div class="fallback-note">If embedding is blocked, use the live link below.</div>
@@ -2092,12 +2186,12 @@
               </div>
               <div class="project-body">
                 <div class="project-top">
-                  <h3>Malabar Spice House</h3>
+                  <div class="project-title" role="heading" aria-level="3">Malabar Spice House</div>
                   <span class="pill">Business</span>
                 </div>
                 <p>Spice export business website</p>
                 <div class="project-actions">
-                  <a class="btn small primary" href="https://malabar-spice-house.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  <a class="btn small primary" href="./go/malabar-spice-house.html" target="_blank" rel="noopener noreferrer"
                     >View Live →</a
                   >
                 </div>
@@ -2107,7 +2201,7 @@
             <article
               class="card project-card reveal"
               data-preview
-              data-url="https://coffee-house-omega-virid.vercel.app/"
+              data-url="./go/coffee-house-omega-virid.html"
               data-title="Coffee House"
               data-desc="Café & restaurant website"
               data-tag="Restaurant"
@@ -2117,7 +2211,7 @@
                 <div class="project-fallback" aria-hidden="true">
                   <div class="fallback-inner">
                     <div class="fallback-title">
-                      <strong>Coffee House</strong>
+                      <span class="fallback-name">Coffee House</span>
                       <span>Preview</span>
                     </div>
                     <div class="fallback-note">If embedding is blocked, use the live link below.</div>
@@ -2126,12 +2220,12 @@
               </div>
               <div class="project-body">
                 <div class="project-top">
-                  <h3>Coffee House</h3>
+                  <div class="project-title" role="heading" aria-level="3">Coffee House</div>
                   <span class="pill">Café</span>
                 </div>
                 <p>Café & restaurant website</p>
                 <div class="project-actions">
-                  <a class="btn small primary" href="https://coffee-house-omega-virid.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  <a class="btn small primary" href="./go/coffee-house-omega-virid.html" target="_blank" rel="noopener noreferrer"
                     >View Live →</a
                   >
                 </div>
@@ -2141,7 +2235,7 @@
             <article
               class="card project-card reveal"
               data-preview
-              data-url="https://health-tracker-liard-omega.vercel.app/"
+              data-url="./go/health-tracker-liard-omega.html"
               data-title="Health Tracker"
               data-desc="Health & wellness app UI"
               data-tag="App UI"
@@ -2151,7 +2245,7 @@
                 <div class="project-fallback" aria-hidden="true">
                   <div class="fallback-inner">
                     <div class="fallback-title">
-                      <strong>Health Tracker</strong>
+                      <span class="fallback-name">Health Tracker</span>
                       <span>Preview</span>
                     </div>
                     <div class="fallback-note">If embedding is blocked, use the live link below.</div>
@@ -2160,12 +2254,12 @@
               </div>
               <div class="project-body">
                 <div class="project-top">
-                  <h3>Health Tracker</h3>
+                  <div class="project-title" role="heading" aria-level="3">Health Tracker</div>
                   <span class="pill">App UI</span>
                 </div>
                 <p>Health & wellness app UI</p>
                 <div class="project-actions">
-                  <a class="btn small primary" href="https://health-tracker-liard-omega.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  <a class="btn small primary" href="./go/health-tracker-liard-omega.html" target="_blank" rel="noopener noreferrer"
                     >View Live →</a
                   >
                 </div>
@@ -2175,7 +2269,7 @@
             <article
               class="card project-card reveal"
               data-preview
-              data-url="https://kerala-solarpower-mission.vercel.app/"
+              data-url="./go/kerala-solarpower-mission.html"
               data-title="Kerala Solar Power"
               data-desc="Solar energy company website"
               data-tag="Energy"
@@ -2185,7 +2279,7 @@
                 <div class="project-fallback" aria-hidden="true">
                   <div class="fallback-inner">
                     <div class="fallback-title">
-                      <strong>Kerala Solar Power</strong>
+                      <span class="fallback-name">Kerala Solar Power</span>
                       <span>Preview</span>
                     </div>
                     <div class="fallback-note">If embedding is blocked, use the live link below.</div>
@@ -2194,12 +2288,12 @@
               </div>
               <div class="project-body">
                 <div class="project-top">
-                  <h3>Kerala Solar Power</h3>
+                  <div class="project-title" role="heading" aria-level="3">Kerala Solar Power</div>
                   <span class="pill">Energy</span>
                 </div>
                 <p>Solar energy company</p>
                 <div class="project-actions">
-                  <a class="btn small primary" href="https://kerala-solarpower-mission.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  <a class="btn small primary" href="./go/kerala-solarpower-mission.html" target="_blank" rel="noopener noreferrer"
                     >View Live →</a
                   >
                 </div>
@@ -2219,7 +2313,7 @@
                 <div class="project-fallback" aria-hidden="true">
                   <div class="fallback-inner">
                     <div class="fallback-title">
-                      <strong>Core Comet</strong>
+                      <span class="fallback-name">Core Comet</span>
                       <span>Preview</span>
                     </div>
                     <div class="fallback-note">If embedding is blocked, use the live link below.</div>
@@ -2228,7 +2322,7 @@
               </div>
               <div class="project-body">
                 <div class="project-top">
-                  <h3>Core Comet</h3>
+                  <div class="project-title" role="heading" aria-level="3">Core Comet</div>
                   <span class="pill">Dev</span>
                 </div>
                 <p>Tech/dev project</p>
@@ -2253,7 +2347,7 @@
                 <div class="project-fallback" aria-hidden="true">
                   <div class="fallback-inner">
                     <div class="fallback-title">
-                      <strong>Cine Scope</strong>
+                      <span class="fallback-name">Cine Scope</span>
                       <span>Preview</span>
                     </div>
                     <div class="fallback-note">If embedding is blocked, use the live link below.</div>
@@ -2262,7 +2356,7 @@
               </div>
               <div class="project-body">
                 <div class="project-top">
-                  <h3>Cine Scope</h3>
+                  <div class="project-title" role="heading" aria-level="3">Cine Scope</div>
                   <span class="pill">UI</span>
                 </div>
                 <p>Movie/cinema app UI</p>
@@ -2293,25 +2387,25 @@
             <article class="card step">
               <div class="num" aria-hidden="true">01</div>
               <div class="icon"><i class="ri-search-line" aria-hidden="true"></i></div>
-              <h3>Discovery</h3>
+              <div class="step-title" role="heading" aria-level="3">Discovery</div>
               <p>We learn about your business, goals, and target audience to create a tailored strategy.</p>
             </article>
             <article class="card step">
               <div class="num" aria-hidden="true">02</div>
               <div class="icon"><i class="ri-palette-line" aria-hidden="true"></i></div>
-              <h3>Design</h3>
+              <div class="step-title" role="heading" aria-level="3">Design</div>
               <p>Creating stunning mockups and prototypes that align with your brand identity.</p>
             </article>
             <article class="card step">
               <div class="num" aria-hidden="true">03</div>
               <div class="icon"><i class="ri-code-line" aria-hidden="true"></i></div>
-              <h3>Development</h3>
+              <div class="step-title" role="heading" aria-level="3">Development</div>
               <p>Building your website with clean code, animations, and optimal performance.</p>
             </article>
             <article class="card step">
               <div class="num" aria-hidden="true">04</div>
               <div class="icon"><i class="ri-rocket-2-line" aria-hidden="true"></i></div>
-              <h3>Launch</h3>
+              <div class="step-title" role="heading" aria-level="3">Launch</div>
               <p>Deploying your website and providing ongoing support and maintenance.</p>
             </article>
           </div>
@@ -2330,7 +2424,7 @@
           <div class="team-grid">
             <article class="card team-card reveal">
               <div class="avatar" aria-hidden="true">NR</div>
-              <h3>Nazal Rahman</h3>
+              <div class="team-name" role="heading" aria-level="3">Nazal Rahman</div>
               <div class="role">Founder & Developer</div>
               <p>
                 Passionate about creating digital experiences that help local businesses thrive in
@@ -2354,7 +2448,7 @@
 
             <article class="card team-card reveal">
               <div class="avatar" aria-hidden="true">AJ</div>
-              <h3>Aslah Jinan</h3>
+              <div class="team-name" role="heading" aria-level="3">Aslah Jinan</div>
               <div class="role">Co-founder & Designer</div>
               <p>Bringing creative visions to life with stunning designs that capture attention and drive engagement.</p>
               <div class="team-actions" aria-label="Aslah contact actions">
@@ -2375,7 +2469,7 @@
 
             <article class="card team-card reveal">
               <div class="avatar" aria-hidden="true">AM</div>
-              <h3>Abdul Manaf</h3>
+              <div class="team-name" role="heading" aria-level="3">Abdul Manaf</div>
               <div class="role">Client Manager</div>
               <p>Crafting intuitive user experiences that delight visitors and convert them into loyal customers.</p>
               <div class="team-actions" aria-label="Manaf contact actions">
@@ -2396,7 +2490,7 @@
 
             <article class="card team-card reveal">
               <div class="avatar" aria-hidden="true">AL</div>
-              <h3>Abdul Latheef</h3>
+              <div class="team-name" role="heading" aria-level="3">Abdul Latheef</div>
               <div class="role">Marketing Manager</div>
               <p>
                 Driving brand visibility and growth through smart digital marketing strategies that put our clients in
@@ -2439,7 +2533,7 @@
                 <div class="reviewer">
                   <div class="mini" aria-hidden="true">RM</div>
                   <div>
-                    <strong>Rahul Menon</strong>
+                    <span class="reviewer-name">Rahul Menon</span>
                     <span>Owner — Spice Garden Restaurant, Kozhikode</span>
                   </div>
                 </div>
@@ -2454,7 +2548,7 @@
                 <div class="reviewer">
                   <div class="mini" aria-hidden="true">SK</div>
                   <div>
-                    <strong>Suresh Kumar</strong>
+                    <span class="reviewer-name">Suresh Kumar</span>
                     <span>MD — Kerala Spice Exports</span>
                   </div>
                 </div>
@@ -2469,7 +2563,7 @@
                 <div class="reviewer">
                   <div class="mini" aria-hidden="true">AN</div>
                   <div>
-                    <strong>Anitha Nair</strong>
+                    <span class="reviewer-name">Anitha Nair</span>
                     <span>Owner — FitLife Gym, Calicut</span>
                   </div>
                 </div>
@@ -2484,7 +2578,7 @@
                 <div class="reviewer">
                   <div class="mini" aria-hidden="true">MA</div>
                   <div>
-                    <strong>Mohammed Ashraf</strong>
+                    <span class="reviewer-name">Mohammed Ashraf</span>
                     <span>Director — Precision Tools Kerala</span>
                   </div>
                 </div>
@@ -2499,7 +2593,7 @@
                 <div class="reviewer">
                   <div class="mini" aria-hidden="true">DK</div>
                   <div>
-                    <strong>Divya Krishnan</strong>
+                    <span class="reviewer-name">Divya Krishnan</span>
                     <span>Founder — Bloom Boutique</span>
                   </div>
                 </div>
@@ -2515,7 +2609,7 @@
                 <div class="reviewer">
                   <div class="mini">RM</div>
                   <div>
-                    <strong>Rahul Menon</strong>
+                    <span class="reviewer-name">Rahul Menon</span>
                     <span>Owner — Spice Garden Restaurant, Kozhikode</span>
                   </div>
                 </div>
@@ -2530,7 +2624,7 @@
                 <div class="reviewer">
                   <div class="mini">SK</div>
                   <div>
-                    <strong>Suresh Kumar</strong>
+                    <span class="reviewer-name">Suresh Kumar</span>
                     <span>MD — Kerala Spice Exports</span>
                   </div>
                 </div>
@@ -2545,7 +2639,7 @@
                 <div class="reviewer">
                   <div class="mini">AN</div>
                   <div>
-                    <strong>Anitha Nair</strong>
+                    <span class="reviewer-name">Anitha Nair</span>
                     <span>Owner — FitLife Gym, Calicut</span>
                   </div>
                 </div>
@@ -2560,7 +2654,7 @@
                 <div class="reviewer">
                   <div class="mini">MA</div>
                   <div>
-                    <strong>Mohammed Ashraf</strong>
+                    <span class="reviewer-name">Mohammed Ashraf</span>
                     <span>Director — Precision Tools Kerala</span>
                   </div>
                 </div>
@@ -2575,7 +2669,7 @@
                 <div class="reviewer">
                   <div class="mini">DK</div>
                   <div>
-                    <strong>Divya Krishnan</strong>
+                    <span class="reviewer-name">Divya Krishnan</span>
                     <span>Founder — Bloom Boutique</span>
                   </div>
                 </div>
@@ -2597,7 +2691,7 @@
           <div class="faq reveal" aria-label="FAQ accordion">
             <div class="faq-item">
               <button class="faq-btn" type="button" aria-expanded="false">
-                <strong>What types of businesses does Fluxify work with?</strong>
+                <span class="faq-q">What types of businesses does Fluxify work with?</span>
                 <span class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
               </button>
               <div class="faq-content">
@@ -2611,7 +2705,7 @@
 
             <div class="faq-item">
               <button class="faq-btn" type="button" aria-expanded="false">
-                <strong>How long does it take to build a website?</strong>
+                <span class="faq-q">How long does it take to build a website?</span>
                 <span class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
               </button>
               <div class="faq-content">
@@ -2625,7 +2719,7 @@
 
             <div class="faq-item">
               <button class="faq-btn" type="button" aria-expanded="false">
-                <strong>Do you provide SEO optimization with websites?</strong>
+                <span class="faq-q">Do you provide SEO optimization with websites?</span>
                 <span class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
               </button>
               <div class="faq-content">
@@ -2639,7 +2733,7 @@
 
             <div class="faq-item">
               <button class="faq-btn" type="button" aria-expanded="false">
-                <strong>Will my website work on mobile phones?</strong>
+                <span class="faq-q">Will my website work on mobile phones?</span>
                 <span class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
               </button>
               <div class="faq-content">
@@ -2652,7 +2746,7 @@
 
             <div class="faq-item">
               <button class="faq-btn" type="button" aria-expanded="false">
-                <strong>Do you offer ongoing support after launch?</strong>
+                <span class="faq-q">Do you offer ongoing support after launch?</span>
                 <span class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
               </button>
               <div class="faq-content">
@@ -2727,21 +2821,21 @@
                   <div class="qc-row">
                     <div class="qc-ico phone" aria-hidden="true"><i class="ri-phone-line"></i></div>
                     <div class="qc-meta">
-                      <strong>Call Us</strong>
+                      <span class="qc-label">Call Us</span>
                       <a href="tel:+919207842646">+91 9207842646</a>
                     </div>
                   </div>
                   <div class="qc-row">
                     <div class="qc-ico wa" aria-hidden="true"><i class="ri-whatsapp-line"></i></div>
                     <div class="qc-meta">
-                      <strong>WhatsApp</strong>
+                      <span class="qc-label">WhatsApp</span>
                       <a href="https://wa.me/919207842646" target="_blank" rel="noopener noreferrer">+91 9207842646</a>
                     </div>
                   </div>
                   <div class="qc-row">
                     <div class="qc-ico mail" aria-hidden="true"><i class="ri-mail-line"></i></div>
                     <div class="qc-meta">
-                      <strong>Email Us</strong>
+                      <span class="qc-label">Email Us</span>
                       <a href="mailto:nazalrahman14@gmail.com">nazalrahman14@gmail.com</a>
                     </div>
                   </div>
@@ -2751,9 +2845,9 @@
               <div class="card side-card reveal">
                 <h3>Business Hours</h3>
                 <div class="hours" aria-label="Business hours">
-                  <div class="hours-row"><span>Monday – Friday</span><strong>9:00 AM – 6:00 PM</strong></div>
-                  <div class="hours-row"><span>Saturday</span><strong>10:00 AM – 4:00 PM</strong></div>
-                  <div class="hours-row closed"><span>Sunday</span><strong>Closed</strong></div>
+                  <div class="hours-row"><span>Monday – Friday</span><span class="hours-time">9:00 AM – 6:00 PM</span></div>
+                  <div class="hours-row"><span>Saturday</span><span class="hours-time">10:00 AM – 4:00 PM</span></div>
+                  <div class="hours-row closed"><span>Sunday</span><span class="hours-time">Closed</span></div>
                 </div>
               </div>
             </div>
@@ -2781,7 +2875,7 @@
           <div class="footer-brand">
             <a class="brand" href="#home" aria-label="Fluxify Home (footer)">
               <span class="logo" aria-hidden="true">
-                <img src="images/fluxify-logo.png" width="38" height="38" alt="" />
+                <img src="images/fluxify-logo.png" width="38" height="38" alt="Fluxify logo" />
               </span>
               <span class="wordmark"><span class="dark">FLUXY</span><span class="fy">FY</span></span>
             </a>
@@ -2803,7 +2897,7 @@
           </div>
 
           <div class="footer-col">
-            <h4>Quick Links</h4>
+            <div class="footer-heading" role="heading" aria-level="4">Quick Links</div>
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
@@ -2812,7 +2906,7 @@
           </div>
 
           <div class="footer-col">
-            <h4>Services</h4>
+            <div class="footer-heading" role="heading" aria-level="4">Services</div>
             <a href="#services">Web Design</a>
             <a href="#services">Frontend Development</a>
             <a href="#services">Mobile Responsive</a>
@@ -2820,7 +2914,7 @@
           </div>
 
           <div class="footer-col">
-            <h4>Contact</h4>
+            <div class="footer-heading" role="heading" aria-level="4">Contact</div>
             <a href="mailto:nazalrahman14@gmail.com">nazalrahman14@gmail.com</a>
             <a href="tel:+919207842646">+91 9207842646</a>
           </div>
