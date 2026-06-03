@@ -410,21 +410,27 @@
       .brand {
         display: inline-flex;
         align-items: center;
-        gap: 12px;
-        min-width: 220px;
+        gap: 10px;
+        min-width: 188px;
       }
 
       .brand .logo {
-        width: 38px;
-        height: 38px;
+        width: 34px;
+        height: 34px;
         filter: drop-shadow(0 10px 20px rgba(124, 58, 237, 0.22));
+      }
+
+      .brand .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
 
       .wordmark {
         font-family: "Syne", system-ui, sans-serif;
         font-weight: 800;
         letter-spacing: 0;
-        font-size: 17px;
+        font-size: 15px;
         display: inline-flex;
         align-items: baseline;
         gap: 0;
@@ -476,6 +482,12 @@
         justify-content: flex-end;
         gap: 10px;
         align-items: center;
+      }
+
+      .nav-actions .btn {
+        min-height: 40px;
+        padding: 0 14px;
+        font-size: 12px;
       }
 
       .nav-toggle {
@@ -566,56 +578,6 @@
         overflow: hidden;
       }
 
-      .orbs {
-        position: absolute;
-        inset: -40px;
-        pointer-events: none;
-        overflow: hidden;
-      }
-
-      .orb {
-        position: absolute;
-        width: 540px;
-        height: 540px;
-        border-radius: 50%;
-        filter: blur(90px);
-        opacity: 0.15;
-        animation: float 12s ease-in-out infinite;
-      }
-
-      .orb.one {
-        background: radial-gradient(circle at 30% 30%, var(--accent), transparent 60%);
-        top: -160px;
-        left: -180px;
-        animation-duration: 14s;
-      }
-
-      .orb.two {
-        background: radial-gradient(circle at 30% 30%, var(--accent-2), transparent 60%);
-        top: -140px;
-        right: -200px;
-        animation-duration: 18s;
-      }
-
-      .orb.three {
-        background: radial-gradient(circle at 30% 30%, var(--teal), transparent 60%);
-        bottom: -220px;
-        left: 20%;
-        animation-duration: 20s;
-      }
-
-      @keyframes float {
-        0% {
-          transform: translate3d(0, 0, 0) scale(1);
-        }
-        50% {
-          transform: translate3d(0, 28px, 0) scale(1.03);
-        }
-        100% {
-          transform: translate3d(0, 0, 0) scale(1);
-        }
-      }
-
       .hero-grid {
         display: grid;
         gap: 26px;
@@ -645,55 +607,6 @@
         gap: 12px;
         flex-wrap: wrap;
         margin-bottom: 6px;
-      }
-
-      .hero-stats {
-        margin-top: 28px;
-        width: 100%;
-        padding: 20px 16px;
-        border-radius: 18px;
-        border: 1px solid rgba(255, 255, 255, 0.07);
-        background: rgba(255, 255, 255, 0.03);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0;
-        position: relative;
-        overflow: hidden;
-        animation: fadeUp 700ms ease both;
-      }
-
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(16px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .hero-stats .stat {
-        padding: 12px 14px;
-        text-align: center;
-      }
-
-      .hero-stats .stat + .stat {
-        border-left: 1px solid rgba(255, 255, 255, 0.08);
-      }
-
-      .hero-stats .num {
-        font-family: "Syne", system-ui, sans-serif;
-        font-weight: 800;
-        font-size: 22px;
-        color: rgba(240, 240, 248, 0.95);
-      }
-
-      .hero-stats .label {
-        font-size: 12px;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: rgba(240, 240, 248, 0.55);
       }
 
       .scroll-indicator {
@@ -1296,86 +1209,6 @@
         color: #25d366;
       }
 
-      /* Testimonials */
-      .t-scroller {
-        overflow: hidden;
-        border-radius: var(--radius);
-        border: 1px solid rgba(255, 255, 255, 0.07);
-        background: rgba(255, 255, 255, 0.02);
-      }
-
-      .t-track {
-        display: flex;
-        gap: 16px;
-        padding: 16px;
-        width: max-content;
-        animation: scrollLeft 26s linear infinite;
-      }
-
-      .t-scroller.paused .t-track {
-        animation-play-state: paused;
-      }
-
-      @keyframes scrollLeft {
-        from {
-          transform: translateX(0);
-        }
-        to {
-          transform: translateX(-50%);
-        }
-      }
-
-      .review {
-        width: 320px;
-        padding: 18px;
-        border-radius: 18px;
-        border: 1px solid rgba(255, 255, 255, 0.09);
-        background: rgba(19, 19, 31, 0.8);
-        display: grid;
-        gap: 10px;
-      }
-
-      .stars {
-        color: #fbbf24;
-        letter-spacing: 0.08em;
-      }
-
-      .review p {
-        color: rgba(240, 240, 248, 0.72);
-        font-size: 14px;
-      }
-
-      .reviewer {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 6px;
-      }
-
-      .mini {
-        width: 34px;
-        height: 34px;
-        border-radius: 999px;
-        display: grid;
-        place-items: center;
-        font-weight: 700;
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.09);
-        color: rgba(240, 240, 248, 0.9);
-      }
-
-      .reviewer strong,
-      .reviewer .reviewer-name {
-        font-size: 13px;
-        color: rgba(240, 240, 248, 0.92);
-      }
-
-      .reviewer span {
-        display: block;
-        font-size: 12px;
-        color: rgba(240, 240, 248, 0.62);
-      }
-
       /* FAQ */
       .faq {
         display: grid;
@@ -1787,8 +1620,41 @@
       }
 
       @media (max-width: 768px) {
+        :root {
+          --nav-h: 68px;
+        }
+        .container {
+          width: min(var(--container), calc(100% - 32px));
+        }
         .section {
-          padding: 78px 0;
+          padding: 72px 0;
+        }
+        .section-head {
+          margin-bottom: 26px;
+        }
+        .hero {
+          min-height: auto;
+          padding-top: calc(var(--nav-h) + 34px);
+          padding-bottom: 54px;
+        }
+        .hero-grid {
+          gap: 20px;
+        }
+        .hero h1 {
+          font-size: clamp(36px, 11vw, 54px);
+          line-height: 1;
+        }
+        .hero p {
+          font-size: 16px;
+        }
+        .hero-ctas,
+        .overlay-bottom {
+          width: 100%;
+        }
+        .hero-ctas .btn,
+        .overlay-bottom .btn {
+          width: 100%;
+          justify-content: center;
         }
         .services-grid {
           grid-template-columns: 1fr;
@@ -1814,27 +1680,69 @@
         .form-card {
           padding: 26px;
         }
-        .hero-stats {
-          grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 520px) {
+        .container {
+          width: min(var(--container), calc(100% - 24px));
         }
-        .hero-stats .stat:nth-child(3) {
-          border-left: none;
+        .nav {
+          gap: 10px;
         }
-        .hero-stats .stat {
-          border-top: 1px solid rgba(255, 255, 255, 0.08);
+        .brand {
+          min-width: 0;
+          gap: 8px;
         }
-        .hero-stats .stat:nth-child(1),
-        .hero-stats .stat:nth-child(2) {
-          border-top: none;
+        .brand .logo {
+          width: 30px;
+          height: 30px;
         }
-        .hero-stats .stat + .stat {
-          border-left: 1px solid rgba(255, 255, 255, 0.08);
+        .wordmark {
+          font-size: 13px;
         }
-        .hero-stats .stat:nth-child(2) {
-          border-left: 1px solid rgba(255, 255, 255, 0.08);
+        .nav-actions .btn {
+          display: none;
         }
-        .hero-stats .stat:nth-child(3) {
-          border-left: none;
+        .nav-toggle,
+        .overlay-close {
+          width: 40px;
+          height: 40px;
+          border-radius: 12px;
+        }
+        .overlay {
+          padding: 12px;
+        }
+        .overlay-links {
+          gap: 8px;
+        }
+        .overlay-links a {
+          padding: 12px;
+          border-radius: 14px;
+        }
+        .tag {
+          max-width: 100%;
+          white-space: normal;
+          letter-spacing: 0.08em;
+          line-height: 1.4;
+        }
+        .hero h1 {
+          font-size: clamp(32px, 12vw, 44px);
+        }
+        .section {
+          padding: 62px 0;
+        }
+        .card,
+        .service-card,
+        .form-card,
+        .step {
+          border-radius: 14px;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-bottom {
+          align-items: flex-start;
+          flex-direction: column;
         }
       }
 
@@ -1842,9 +1750,7 @@
         html {
           scroll-behavior: auto;
         }
-        .orb,
         .scroll-indicator i,
-        .t-track,
         .tech-float .ti {
           animation: none !important;
         }
@@ -1885,7 +1791,6 @@
           <a href="#projects">Projects</a>
           <a href="#process">Process</a>
           <a href="#team">Team</a>
-          <a href="#testimonials">Testimonials</a>
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </div>
@@ -1926,7 +1831,6 @@
         <a href="#projects">Projects</a>
         <a href="#process">Process</a>
         <a href="#team">Team</a>
-        <a href="#testimonials">Testimonials</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </div>
@@ -1942,12 +1846,6 @@
     <main id="main">
       <!-- HERO -->
       <section class="hero" id="home" aria-label="Hero">
-        <div class="orbs" aria-hidden="true">
-          <div class="orb one"></div>
-          <div class="orb two"></div>
-          <div class="orb three"></div>
-        </div>
-
         <div class="container hero-grid">
           <span class="tag">✦ Kerala's #1 Web Agency</span>
           <h1>
@@ -1963,21 +1861,6 @@
           <div class="hero-ctas">
             <a class="btn primary" href="#projects"><i class="ri-eye-line"></i>View Our Work →</a>
             <a class="btn ghost" href="#contact"><i class="ri-rocket-line"></i>Start a Project</a>
-          </div>
-
-          <div class="hero-stats" aria-label="Key stats">
-            <div class="stat">
-              <div class="num">4</div>
-              <div class="label">Experts</div>
-            </div>
-            <div class="stat">
-              <div class="num">5</div>
-              <div class="label">Day Delivery</div>
-            </div>
-            <div class="stat">
-              <div class="num">100</div>
-              <div class="label">Response</div>
-            </div>
           </div>
         </div>
 
@@ -2478,173 +2361,6 @@
         </div>
       </section>
 
-      <!-- TESTIMONIALS -->
-      <section class="section" id="testimonials">
-        <div class="container">
-          <div class="section-head reveal">
-            <div class="kicker">TESTIMONIALS</div>
-            <h2>What Our Clients Say</h2>
-            <p>Real feedback from local businesses — the kind of results we aim for in every project.</p>
-          </div>
-
-          <div class="t-scroller reveal" id="t-scroller" aria-label="Testimonials carousel">
-            <div class="t-track" id="t-track">
-              <!-- Set A -->
-              <article class="review">
-                <div class="stars" aria-label="5 stars">★★★★★</div>
-                <p>
-                  “Fluxify transformed our restaurant's online presence completely. We saw a 3x increase in
-                  reservations within the first month of our new website going live!”
-                </p>
-                <div class="reviewer">
-                  <div class="mini" aria-hidden="true">RM</div>
-                  <div>
-                    <span class="reviewer-name">Rahul Menon</span>
-                    <span>Owner — Spice Garden Restaurant, Kozhikode</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review">
-                <div class="stars" aria-label="5 stars">★★★★★</div>
-                <p>
-                  “The team delivered our export company website in just 6 days. Clean design, fast loading, and
-                  it looks amazing on mobile. Highly recommend!”
-                </p>
-                <div class="reviewer">
-                  <div class="mini" aria-hidden="true">SK</div>
-                  <div>
-                    <span class="reviewer-name">Suresh Kumar</span>
-                    <span>MD — Kerala Spice Exports</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review">
-                <div class="stars" aria-label="5 stars">★★★★★</div>
-                <p>
-                  “Professional, creative, and very responsive. Nazal and team understood our brand perfectly
-                  and built exactly what we envisioned.”
-                </p>
-                <div class="reviewer">
-                  <div class="mini" aria-hidden="true">AN</div>
-                  <div>
-                    <span class="reviewer-name">Anitha Nair</span>
-                    <span>Owner — FitLife Gym, Calicut</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review">
-                <div class="stars" aria-label="5 stars">★★★★★</div>
-                <p>
-                  “Our machinery company needed a serious online presence. Fluxify delivered a powerful,
-                  trust-building website that's already bringing in international inquiries.”
-                </p>
-                <div class="reviewer">
-                  <div class="mini" aria-hidden="true">MA</div>
-                  <div>
-                    <span class="reviewer-name">Mohammed Ashraf</span>
-                    <span>Director — Precision Tools Kerala</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review">
-                <div class="stars" aria-label="5 stars">★★★★★</div>
-                <p>
-                  “Affordable, fast, and stunning results. I was skeptical at first but the final website blew
-                  me away. Our customers keep complimenting how modern it looks.”
-                </p>
-                <div class="reviewer">
-                  <div class="mini" aria-hidden="true">DK</div>
-                  <div>
-                    <span class="reviewer-name">Divya Krishnan</span>
-                    <span>Founder — Bloom Boutique</span>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Set B (duplicate for seamless loop) -->
-              <article class="review" aria-hidden="true">
-                <div class="stars">★★★★★</div>
-                <p>
-                  “Fluxify transformed our restaurant's online presence completely. We saw a 3x increase in
-                  reservations within the first month of our new website going live!”
-                </p>
-                <div class="reviewer">
-                  <div class="mini">RM</div>
-                  <div>
-                    <span class="reviewer-name">Rahul Menon</span>
-                    <span>Owner — Spice Garden Restaurant, Kozhikode</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review" aria-hidden="true">
-                <div class="stars">★★★★★</div>
-                <p>
-                  “The team delivered our export company website in just 6 days. Clean design, fast loading, and
-                  it looks amazing on mobile. Highly recommend!”
-                </p>
-                <div class="reviewer">
-                  <div class="mini">SK</div>
-                  <div>
-                    <span class="reviewer-name">Suresh Kumar</span>
-                    <span>MD — Kerala Spice Exports</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review" aria-hidden="true">
-                <div class="stars">★★★★★</div>
-                <p>
-                  “Professional, creative, and very responsive. Nazal and team understood our brand perfectly
-                  and built exactly what we envisioned.”
-                </p>
-                <div class="reviewer">
-                  <div class="mini">AN</div>
-                  <div>
-                    <span class="reviewer-name">Anitha Nair</span>
-                    <span>Owner — FitLife Gym, Calicut</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review" aria-hidden="true">
-                <div class="stars">★★★★★</div>
-                <p>
-                  “Our machinery company needed a serious online presence. Fluxify delivered a powerful,
-                  trust-building website that's already bringing in international inquiries.”
-                </p>
-                <div class="reviewer">
-                  <div class="mini">MA</div>
-                  <div>
-                    <span class="reviewer-name">Mohammed Ashraf</span>
-                    <span>Director — Precision Tools Kerala</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review" aria-hidden="true">
-                <div class="stars">★★★★★</div>
-                <p>
-                  “Affordable, fast, and stunning results. I was skeptical at first but the final website blew
-                  me away. Our customers keep complimenting how modern it looks.”
-                </p>
-                <div class="reviewer">
-                  <div class="mini">DK</div>
-                  <div>
-                    <span class="reviewer-name">Divya Krishnan</span>
-                    <span>Founder — Bloom Boutique</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- FAQ -->
       <section class="section alt" id="faq">
         <div class="container">
@@ -3010,17 +2726,6 @@
           });
         });
 
-        // Testimonials pause on hover (JS-driven)
-        const tScroller = document.getElementById("t-scroller");
-        if (tScroller) {
-          const pause = () => tScroller.classList.add("paused");
-          const play = () => tScroller.classList.remove("paused");
-          tScroller.addEventListener("mouseenter", pause);
-          tScroller.addEventListener("mouseleave", play);
-          tScroller.addEventListener("touchstart", pause, { passive: true });
-          tScroller.addEventListener("touchend", play, { passive: true });
-        }
-
         // Contact form (Formspree) without reload
         const form = document.getElementById("contact-form");
         const statusEl = document.getElementById("form-status");
@@ -3069,6 +2774,9 @@
 
         // Project iframe previews: lazy load + fallback if blocked
         const previewCards = Array.from(document.querySelectorAll("[data-preview]"));
+        const canLoadPreviews = window.matchMedia("(min-width: 769px)").matches;
+        if (!canLoadPreviews) return;
+
         const initPreview = (card) => {
           if (!card || card.dataset.loaded === "1") return;
           card.dataset.loaded = "1";
