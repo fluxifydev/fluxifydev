@@ -411,7 +411,7 @@
         display: inline-flex;
         align-items: center;
         gap: 12px;
-        min-width: 190px;
+        min-width: 220px;
       }
 
       .brand .logo {
@@ -423,8 +423,8 @@
       .wordmark {
         font-family: "Syne", system-ui, sans-serif;
         font-weight: 800;
-        letter-spacing: -0.03em;
-        font-size: 18px;
+        letter-spacing: 0;
+        font-size: 17px;
         display: inline-flex;
         align-items: baseline;
         gap: 0;
@@ -644,12 +644,13 @@
         display: flex;
         gap: 12px;
         flex-wrap: wrap;
+        margin-bottom: 6px;
       }
 
       .hero-stats {
-        margin-top: 18px;
+        margin-top: 28px;
         width: 100%;
-        padding: 16px 16px;
+        padding: 20px 16px;
         border-radius: 18px;
         border: 1px solid rgba(255, 255, 255, 0.07);
         background: rgba(255, 255, 255, 0.03);
@@ -828,15 +829,15 @@
       /* Tech */
       .tech-wrap {
         position: relative;
+        display: grid;
+        gap: 34px;
       }
 
       .tech-float {
-        position: absolute;
-        left: 50%;
-        top: -12px;
-        transform: translateX(-50%);
-        width: min(900px, 100%);
-        height: 140px;
+        width: min(920px, 100%);
+        min-height: 138px;
+        margin: 0 auto 4px;
+        position: relative;
         pointer-events: none;
       }
 
@@ -1159,28 +1160,6 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 18px;
         padding-top: 14px;
-      }
-
-      .timeline::after {
-        content: "";
-        position: absolute;
-        left: 14px;
-        right: 14px;
-        top: 30px;
-        height: 2px;
-        background: linear-gradient(
-          90deg,
-          rgba(91, 110, 245, 0.2),
-          rgba(124, 58, 237, 0.45),
-          rgba(20, 184, 166, 0.35)
-        );
-        transform: scaleX(0);
-        transform-origin: left center;
-        transition: transform 900ms ease;
-      }
-
-      .timeline.visible::after {
-        transform: scaleX(1);
       }
 
       .step {
@@ -1826,19 +1805,6 @@
         .timeline {
           grid-template-columns: 1fr;
         }
-        .timeline::after {
-          left: 26px;
-          right: auto;
-          top: 26px;
-          bottom: 26px;
-          width: 2px;
-          height: auto;
-          transform-origin: center top;
-          transform: scaleY(0);
-        }
-        .timeline.visible::after {
-          transform: scaleY(1);
-        }
         .step .num {
           font-size: 56px;
         }
@@ -1903,12 +1869,12 @@
 
     <header class="nav-wrap" id="site-header">
       <div class="container nav">
-        <a class="brand" href="#home" aria-label="Fluxify Home">
+        <a class="brand" href="#home" aria-label="FluxifyDev Home">
           <span class="logo" aria-hidden="true">
               <img src="images/fluxify-logo.png" width="38" height="38" alt="Fluxify logo" />
           </span>
-          <span class="wordmark" aria-label="Fluxify">
-            <span class="dark">FLUXY</span><span class="fy">FY</span>
+          <span class="wordmark" aria-label="FluxifyDev">
+            <span class="dark">FLUXIFY</span><span class="fy">DEV</span>
           </span>
         </a>
 
@@ -1942,11 +1908,11 @@
 
     <div class="overlay" id="mobile-nav" aria-hidden="true">
       <div class="overlay-top">
-        <a class="brand" href="#home" aria-label="Fluxify Home (mobile)">
+        <a class="brand" href="#home" aria-label="FluxifyDev Home (mobile)">
           <span class="logo" aria-hidden="true">
               <img src="images/fluxify-logo.png" width="38" height="38" alt="Fluxify logo" />
           </span>
-          <span class="wordmark"><span class="dark">FLUXY</span><span class="fy">FY</span></span>
+          <span class="wordmark"><span class="dark">FLUXIFY</span><span class="fy">DEV</span></span>
         </a>
         <button class="overlay-close" id="overlay-close" type="button" aria-label="Close menu">
           <i class="ri-close-line" aria-hidden="true"></i>
@@ -2873,11 +2839,11 @@
       <footer>
         <div class="container footer-grid">
           <div class="footer-brand">
-            <a class="brand" href="#home" aria-label="Fluxify Home (footer)">
+            <a class="brand" href="#home" aria-label="FluxifyDev Home (footer)">
               <span class="logo" aria-hidden="true">
                 <img src="images/fluxify-logo.png" width="38" height="38" alt="Fluxify logo" />
               </span>
-              <span class="wordmark"><span class="dark">FLUXY</span><span class="fy">FY</span></span>
+              <span class="wordmark"><span class="dark">FLUXIFY</span><span class="fy">DEV</span></span>
             </a>
             <p>Premium web design agency helping local businesses establish a powerful online presence.</p>
             <div class="socials" aria-label="Social links">
