@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_publish_tmp/
+
+Sitemap: https://www.fluxifydev.in/sitemap.xml
