@@ -56,7 +56,12 @@
                 "contactType": "sales"
               }
             ],
-            "sameAs": ["https://github.com/nazal-rahman"]
+            "sameAs": [
+              "https://www.instagram.com/fluxifydev.in/",
+              "https://www.linkedin.com/in/fluxify-dev",
+              "https://www.facebook.com/profile.php?id=61590163624981",
+              "https://x.com/fluxify_dev?s=20"
+            ]
           },
           {
             "@type": "LocalBusiness",
@@ -929,17 +934,19 @@
       /* Projects */
       .projects-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 18px;
       }
 
       .project-card {
         display: grid;
         grid-template-rows: auto 1fr;
+        min-width: 0;
       }
 
       .project-preview {
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 16 / 10;
+        min-height: 180px;
         background: rgba(255, 255, 255, 0.02);
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         position: relative;
@@ -953,6 +960,7 @@
         display: block;
         opacity: 0;
         transition: opacity 220ms ease;
+        transform-origin: top left;
       }
 
       .project-card.preview-ready .project-preview iframe {
@@ -990,7 +998,7 @@
       }
 
       .fallback-inner {
-        width: 100%;
+        width: min(100%, 280px);
         border-radius: 16px;
         border: 1px solid rgba(255, 255, 255, 0.12);
         background: rgba(10, 10, 15, 0.55);
@@ -1004,15 +1012,19 @@
         align-items: center;
         justify-content: space-between;
         gap: 10px;
+        min-width: 0;
       }
 
       .fallback-title strong,
       .fallback-title .fallback-name {
         font-weight: 700;
         color: rgba(240, 240, 248, 0.92);
+        min-width: 0;
+        overflow-wrap: anywhere;
       }
 
       .fallback-title span {
+        flex-shrink: 0;
         font-size: 12px;
         color: rgba(240, 240, 248, 0.7);
         border: 1px solid rgba(255, 255, 255, 0.12);
@@ -1024,12 +1036,15 @@
       .fallback-note {
         font-size: 13px;
         color: rgba(240, 240, 248, 0.7);
+        line-height: 1.45;
       }
 
       .project-body {
         padding: 18px 18px 18px 18px;
         display: grid;
+        align-content: start;
         gap: 10px;
+        min-width: 0;
       }
 
       .project-top {
@@ -1037,6 +1052,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 12px;
+        min-width: 0;
       }
 
       .project-body h3,
@@ -1047,11 +1063,14 @@
         margin: 0;
         font-size: 18px;
         font-weight: 800;
+        min-width: 0;
+        overflow-wrap: anywhere;
       }
 
       .project-body p {
         color: rgba(240, 240, 248, 0.62);
         font-size: 14px;
+        overflow-wrap: anywhere;
       }
 
       .project-actions {
@@ -1064,6 +1083,7 @@
       .btn.small {
         padding: 10px 12px;
         font-size: 13px;
+        min-height: 40px;
       }
 
       /* Process timeline */
@@ -1609,7 +1629,10 @@
           place-items: center;
         }
         .projects-grid {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .project-preview {
+          min-height: 170px;
         }
         .team-grid {
           grid-template-columns: repeat(2, 1fr);
@@ -1667,6 +1690,20 @@
         }
         .projects-grid {
           grid-template-columns: 1fr;
+        }
+        .project-card {
+          grid-template-rows: auto auto;
+        }
+        .project-preview {
+          aspect-ratio: 16 / 9;
+          min-height: 210px;
+        }
+        .project-body {
+          padding: 16px;
+        }
+        .project-actions .btn {
+          width: 100%;
+          justify-content: center;
         }
         .timeline {
           grid-template-columns: 1fr;
@@ -1733,9 +1770,27 @@
         }
         .card,
         .service-card,
+        .project-preview,
         .form-card,
         .step {
           border-radius: 14px;
+        }
+        .project-preview {
+          min-height: 180px;
+        }
+        .project-top {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+        }
+        .fallback-inner {
+          width: 100%;
+          padding: 12px;
+        }
+        .fallback-title {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
         }
         .footer-grid {
           grid-template-columns: 1fr;
@@ -2563,14 +2618,17 @@
             </a>
             <p>Premium web design agency helping local businesses establish a powerful online presence.</p>
             <div class="socials" aria-label="Social links">
-              <a href="https://github.com/nazal-rahman" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-                ><i class="ri-github-line"></i
-              ></a>
-              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+              <a href="https://www.instagram.com/fluxifydev.in/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                 ><i class="ri-instagram-line"></i
               ></a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+              <a href="https://www.linkedin.com/in/fluxify-dev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
                 ><i class="ri-linkedin-line"></i
+              ></a>
+              <a href="https://www.facebook.com/profile.php?id=61590163624981" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+              <a href="https://x.com/fluxify_dev?s=20" target="_blank" rel="noopener noreferrer" aria-label="X"
+                ><i class="ri-twitter-x-line"></i
               ></a>
               <a href="https://wa.me/919207842646" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
                 ><i class="ri-whatsapp-line"></i
